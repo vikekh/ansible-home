@@ -8,6 +8,7 @@ winget install --id Google.Chrome -e
 winget install --id thehandbraketeam.handbrake -e
 winget install --id Implbits.HashTab -e
 winget install --id LibreOffice.LibreOffice -e
+winget install --id JAMSoftware.TreeSizeFree -e
 winget install --id Malwarebytes.Malwarebytes -e
 winget install --id Microsoft.dotnet -e
 winget install --id Microsoft.dotNetFramework -e

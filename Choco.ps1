@@ -8,6 +8,6 @@ choco install makemkv
 choco install paint.net
 choco install plex
 choco install samsung-magician
-choco install treesizefree
+#choco install treesizefree
 choco install veracrypt
 choco install visualstudio2019community-preview --pre 
