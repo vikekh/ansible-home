@@ -3,6 +3,7 @@ choco install duplicati
 choco install google-backup-and-sync
 choco install imgburn
 choco install kdiff3
+choco install lossless-cut
 choco install makemkv
 choco install paint.net
 choco install plex
