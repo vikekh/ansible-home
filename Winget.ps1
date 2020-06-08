@@ -17,6 +17,7 @@ winget install --id Microsoft.VisualStudioCode -e
 winget install --id Mozilla.Firefox -e
 winget install --id MullvadVPN.MullvadVPN -e
 winget install --id Nvidia.GeForceExperience -e
+winget install --id OpenJS.Nodejs -e
 winget install --id SQLiteBrowser.SQLiteBrowser -e
 winget install --id Spotify.Spotify -e
 winget install --id Valve.Steam -e
