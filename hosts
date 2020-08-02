@@ -1,0 +1,8 @@
+[all]
+spirou
+
+[spirou]
+spirou
+
+[windows:children]
+spirou
