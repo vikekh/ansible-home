@@ -1,0 +1,7 @@
+---
+- hosts: windows
+  tasks:
+    - name: Upgrade Chocolatey packages
+      win_chocolatey:
+        name: all
+        state: latest

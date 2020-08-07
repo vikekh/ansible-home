@@ -1,0 +1,58 @@
+---
+ansible_host: 
+ansible_user: 
+ansible_password: 
+
+chocolatey_packages:
+  - name: 7zip
+  - name: bitwarden
+  - name: chocolateygui
+  - name: discord
+  - name: docker-desktop
+  - name: dotnetcore-sdk
+  - name: dropbox
+  - name: duplicati # not trusted
+  - name: etcher
+  - name: ffmpeg
+  - name: firefox
+  - name: git
+  - name: google-backup-and-sync
+  - name: googlechrome
+  - name: hashtab # not trusted
+  - name: imgburn # not trusted
+  - name: kdiff3
+  - name: libreoffice-fresh
+  - name: microsoft-teams
+  - name: microsoft-windows-terminal
+  - name: mullvad-app # not trusted
+  - name: nodejs
+  - name: paint.net
+  - name: plex
+  - name: samsung-magician # not trusted
+  - name: spotify
+  - name: steam
+  - name: syncthing
+  - name: teamviewer
+  - name: treesizefree
+  - name: veracrypt
+  - name: visualstudio2019community
+  - name: visualstudio2019community-preview # prerelease
+    allow_prerelease: yes
+  - name: vlc
+  - name: vscode
+  - name: wireguard # prerelease
+    allow_prerelease: yes
+  #- name: anydvd
+  #- name: geforce-experience
+  #- name: geforce-game-ready-driver
+  #- name: handbrake
+  #- name: jellyfin
+  #- name: lossless-cut
+  #- name: makemkv
+  #- name: malwarebytes
+  #- name: nvidia-display-driver
+  #- name: pycharm-edu
+  #- name: sqlitebrowser # not trusted
+windows_packages:
+  - path: https://install.bankid.com/Repository/BankID_installation_7_9_1.exe
+    product_id: "{77B5BCDC-5496-48DA-8B16-5EE2AF08CA31}"

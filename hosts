@@ -1,8 +1,8 @@
 [all]
-spirou
+desktop
 
-[spirou]
-spirou
+[desktop]
+desktop
 
 [windows:children]
-spirou
+desktop

@@ -1,0 +1,10 @@
+---
+- hosts: windows
+  tasks:
+    - name: Install Chocolatey packages
+      win_chocolatey:
+        name: "{{ item.name }}"
+        state: "{{ item.state | default('present') }}"
+        allow_prerelease: "{{ item.allow_prerelease | default('no') }}"
+      with_items: "{{ chocolatey_packages }}"
+      when: chocolatey_packages is defined

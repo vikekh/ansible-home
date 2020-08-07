@@ -1,0 +1,10 @@
+---
+- hosts: windows
+  tasks:
+    - name: Install packages
+      win_package:
+        path: "{{ item.path }}"
+        product_id: "{{ item.product_id }}"
+        state: "{{ item.state | default('present') }}"
+      with_items: "{{ windows_packages }}"
+      when: windows_packages is defined
