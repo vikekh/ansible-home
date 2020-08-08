@@ -1,0 +1,7 @@
+---
+
+- name: Install BankID
+  win_package:
+    path: https://install.bankid.com/Repository/BankID_installation_7_9_1.exe
+    product_id: "{77B5BCDC-5496-48DA-8B16-5EE2AF08CA31}"
+    state: present

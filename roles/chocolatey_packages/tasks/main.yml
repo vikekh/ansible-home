@@ -1,0 +1,35 @@
+---
+
+- name: Install Chocolatey packages
+  win_chocolatey:
+    allow_empty_checksums: "{{ item.allow_empty_checksums | default(omit) }}"
+    allow_multiple: "{{ item.allow_multiple | default(omit) }}"
+    allow_prerelease: "{{ item.allow_prerelease | default(omit) }}"
+    architecture: "{{ item.architecture | default(omit) }}"
+    force: "{{ item.force | default(omit) }}"
+    ignore_checksums: "{{ item.ignore_checksums | default(omit) }}"
+    ignore_dependencies: "{{ item.ignore_dependencies | default(omit) }}"
+    install_args: "{{ item.install_args | default(omit) }}"
+    name: "{{ item.name }}"
+    package_params: "{{ item.package_params | default(omit) }}"
+    pinned: "{{ item.pinned | default(omit) }}"
+    proxy_password: "{{ item.proxy_password | default(omit) }}"
+    proxy_url: "{{ item.proxy_url | default(omit) }}"
+    proxy_username: "{{ item.proxy_username | default(omit) }}"
+    skip_scripts: "{{ item.skip_scripts | default(omit) }}"
+    source: "{{ item.source | default(omit) }}"
+    source_password: "{{ item.source_password | default(omit) }}"
+    source_username: "{{ item.source_username | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+    timeout: "{{ item.timeout | default(omit) }}"
+    validate_certs: "{{ item.validate_certs | default(omit) }}"
+    version: "{{ item.version | default(omit) }}"
+  with_items: "{{ chocolatey_packages.packages }}"
+  tags: install
+
+- name: Upgrade Chocolatey packages
+  win_chocolatey:
+    name: all
+    state: latest
+  tags: upgrade
+  
