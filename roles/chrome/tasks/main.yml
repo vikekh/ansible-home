@@ -1,0 +1,6 @@
+---
+
+- name: Install Chrome
+  win_chocolatey:
+    name: googlechrome
+    state: latest

@@ -1,0 +1,6 @@
+---
+
+- hosts: windows
+  roles:
+    - chrome
+    - firefox

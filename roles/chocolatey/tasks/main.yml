@@ -1,0 +1,11 @@
+---
+
+- name: Install Chocolatey
+  win_chocolatey:
+    name: chocolatey
+    state: latest
+
+- name: Install Chocolatey GUI
+  win_chocolatey:
+    name: chocolateygui
+    state: latest

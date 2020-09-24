@@ -1,7 +1,7 @@
 ---
 
-- name: Install BankID
+- name: Install WireGuard
   win_chocolatey:
-    name: bankid
+    name: wireguard
     state: latest
     allow_prerelease: yes

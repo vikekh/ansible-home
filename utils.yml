@@ -1,0 +1,5 @@
+---
+
+- hosts: windows
+  roles:
+    - 7zip

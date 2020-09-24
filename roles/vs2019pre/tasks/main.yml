@@ -1,0 +1,8 @@
+---
+
+- name: Install Visual Studio 2019 Community Preview
+  win_chocolatey:
+    name: visualstudio2019community-preview
+    state: latest
+    allow_prerelease: yes
+    #TODO: package_params:

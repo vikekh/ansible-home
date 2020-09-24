@@ -1,0 +1,7 @@
+---
+
+- hosts: windows
+  roles:
+    - handbrake
+    - makemkv
+    - vlc

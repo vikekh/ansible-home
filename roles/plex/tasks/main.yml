@@ -1,0 +1,6 @@
+---
+
+- name: Install Plex
+  win_chocolatey:
+    name: plex
+    state: latest

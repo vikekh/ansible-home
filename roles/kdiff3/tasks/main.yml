@@ -1,0 +1,6 @@
+---
+
+- name: Install KDiff3
+  win_chocolatey:
+    name: kdiff3
+    state: latest

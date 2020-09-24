@@ -1,0 +1,16 @@
+---
+
+# - name: Install MediaPlayback
+#   win_optional_feature:
+#     name: MediaPlayback
+#     state: present
+
+# - name: Install Rsat.ServerManager.Tools
+#   win_feature:
+#     name: Rsat.ServerManager.Tools
+#     state: present
+
+# - name: Install Media.MediaFeaturePack
+#   win_feature:
+#     name: Media.MediaFeaturePack
+#     state: present

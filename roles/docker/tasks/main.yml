@@ -1,0 +1,6 @@
+---
+
+- name: Install Docker
+  win_chocolatey:
+    name: docker-desktop
+    state: latest

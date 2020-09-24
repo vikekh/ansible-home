@@ -1,0 +1,8 @@
+---
+
+# - name: Install Mullvad
+#   win_chocolatey:
+#     name: mullvad-app
+#     state: latest
+
+#TODO: Install from GitHub

@@ -1,0 +1,6 @@
+---
+
+- hosts: desktop
+- import_playbook: chocolatey.yml
+- import_playbook: development.yml
+- import_playbook: vpn.yml

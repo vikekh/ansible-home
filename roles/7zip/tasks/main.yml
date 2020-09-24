@@ -1,0 +1,6 @@
+---
+
+- name: Install 7-Zip
+  win_chocolatey:
+    name: 7zip
+    state: latest

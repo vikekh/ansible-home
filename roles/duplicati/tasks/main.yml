@@ -1,0 +1,6 @@
+---
+
+- name: Install Duplicati
+  win_chocolatey:
+    name: duplicati # not trusted
+    state: latest

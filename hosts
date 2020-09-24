@@ -1,8 +1,5 @@
 [all]
 desktop
 
-[desktop]
-desktop
-
-[windows:children]
+[windows]
 desktop

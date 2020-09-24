@@ -1,0 +1,6 @@
+---
+
+- name: Install PDFsam
+  win_chocolatey:
+    name: pdfsam
+    state: latest

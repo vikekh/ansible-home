@@ -1,0 +1,6 @@
+---
+
+- hosts: windows
+  roles:
+    - libreoffice
+    - pdfsam
