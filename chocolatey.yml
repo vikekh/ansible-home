@@ -3,4 +3,4 @@
 - hosts: windows
   roles:
     - chocolatey
-    - chocolatey_packages
+    #- chocolatey_packages

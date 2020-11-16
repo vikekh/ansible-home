@@ -1,28 +1,3 @@
 ---
 
-chocolatey_packages:
-  - anydvd
-  - bitwarden
-  - checksum
-  - discord
-  - etcher
-  - ffmpeg
-  - filebot
-  #- geforce-game-ready-driver
-  - google-backup-and-sync
-  - hashtab # not trusted
-  - imgburn # not trusted
-  - malwarebytes
-  - microsoft-teams
-  - microsoft-windows-terminal
-  - paint.net
-  - passkey
-  - postman
-  - samsung-magician # not trusted
-  - steam
-  - syncthing
-  - teamviewer
-  - tinymediamanager
-  - treesizefree
-  - ussf
-  - veracrypt
+#chocolatey_packages:

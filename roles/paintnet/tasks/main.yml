@@ -1,0 +1,6 @@
+---
+
+- name: Install Paint.NET
+  win_chocolatey:
+    name: paint.net
+    state: latest

@@ -1,0 +1,6 @@
+---
+
+- name: Install FFmpeg
+  win_chocolatey:
+    name: ffmpeg
+    state: latest

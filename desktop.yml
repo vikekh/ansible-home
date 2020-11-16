@@ -1,6 +1,27 @@
 ---
 
 - hosts: desktop
+  tasks:
+    # - name: Install Geforce Game Ready Driver
+    #   win_chocolatey:
+    #     name: geforce-game-ready-driver
+    #     state: latest
+    - name: Install Samsung Magician
+      win_chocolatey:
+        name: samsung-magician # not trusted
+        state: latest
+
+- import_playbook: backup.yml
+- import_playbook: browser.yml
+- import_playbook: chat.yml
 - import_playbook: chocolatey.yml
 - import_playbook: development.yml
+- import_playbook: gaming.yml
+- import_playbook: image.yml
+- import_playbook: media.yml
+- import_playbook: office.yml
+- import_playbook: remote.yml
+- import_playbook: security.yml
+- import_playbook: utils.yml
+- import_playbook: video.yml
 - import_playbook: vpn.yml

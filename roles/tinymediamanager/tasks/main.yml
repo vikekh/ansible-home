@@ -1,0 +1,7 @@
+---
+
+- name: Install tinyMediaManager
+  win_chocolatey:
+    name: tinymediamanager
+    version: "3.1.10"
+    pinned: yes

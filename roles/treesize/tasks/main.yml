@@ -1,0 +1,6 @@
+---
+
+- name: Install TreeSize
+  win_chocolatey:
+    name: treesizefree
+    state: latest

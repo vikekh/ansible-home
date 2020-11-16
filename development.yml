@@ -8,6 +8,7 @@
     - kdiff3
     - nodejs
     - sqlitebrowser
-    - vs2019
-    - vs2019pre
+    - visualstudio2019
+    - visualstudio2019preview
     - vscode
+    - windowsterminal

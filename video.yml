@@ -2,6 +2,8 @@
 
 - hosts: windows
   roles:
+    - ffmpeg
     - handbrake
     - makemkv
+    - mkvtoolnix
     - vlc

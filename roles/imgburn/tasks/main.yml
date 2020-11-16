@@ -1,0 +1,6 @@
+---
+
+- name: Install ImgBurn
+  win_chocolatey:
+    name: imgburn
+    state: latest

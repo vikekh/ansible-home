@@ -1,0 +1,6 @@
+---
+
+- name: Install Microsoft Teams
+  win_chocolatey:
+    name: microsoft-teams
+    state: latest

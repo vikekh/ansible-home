@@ -1,0 +1,6 @@
+---
+
+- name: Install 
+  win_chocolatey:
+    name: google-backup-and-sync
+    state: latest
