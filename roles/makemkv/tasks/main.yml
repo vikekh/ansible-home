@@ -1,8 +1,5 @@
 ---
 
-- name: Install MakeMKV
-  win_chocolatey:
-    name: makemkv
-    state: latest
-
-# Key: https://www.makemkv.com/forum/viewtopic.php?t=1053
+- name: Install MakeMKV for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

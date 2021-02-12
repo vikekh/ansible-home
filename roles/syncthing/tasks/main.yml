@@ -1,6 +1,5 @@
 ---
 
-- name: Install Syncthing
-  win_chocolatey:
-    name: syncthing
-    state: latest
+- name: Install Syncthing for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

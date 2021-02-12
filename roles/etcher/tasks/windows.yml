@@ -1,0 +1,6 @@
+---
+
+- name: Install Etcher
+  win_chocolatey:
+    name: etcher
+    state: latest

@@ -1,6 +1,5 @@
 ---
 
-- name: Install Spotify
-  win_chocolatey:
-    name: spotify
-    state: latest
+- name: Install Spotify for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

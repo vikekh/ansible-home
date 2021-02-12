@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  roles:
+    - bitwarden
+    - dropbox
+    - duplicati
+    - firefox
+    - spotify
+    - veracrypt
+    - vlc
+    - wireguard

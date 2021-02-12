@@ -1,0 +1,6 @@
+---
+
+- name: Install Dropbox
+  win_chocolatey:
+    name: dropbox
+    state: latest

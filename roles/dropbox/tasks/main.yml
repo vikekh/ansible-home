@@ -1,6 +1,5 @@
 ---
 
-- name: Install Dropbox
-  win_chocolatey:
-    name: dropbox
-    state: latest
+- name: Install Dropbox for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

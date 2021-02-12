@@ -1,6 +1,5 @@
 ---
 
-- name: Install Node.js
-  win_chocolatey:
-    name: nodejs
-    state: latest
+- name: Install Node.js for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

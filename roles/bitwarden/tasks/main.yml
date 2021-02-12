@@ -1,11 +1,5 @@
 ---
 
-- name: Install Bitwarden
-  win_chocolatey:
-    name: bitwarden
-    state: latest
-
-- name: Install Bitwarden CLI
-  win_chocolatey:
-    name: bitwarden-cli
-    state: latest
+- name: Install Bitwarden for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

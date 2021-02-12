@@ -1,0 +1,6 @@
+---
+
+- name: Install HandBrake
+  win_chocolatey:
+    name: handbrake
+    state: latest

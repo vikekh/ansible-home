@@ -1,6 +1,5 @@
 ---
 
-- name: Install Git
-  win_chocolatey:
-    name: git
-    state: latest
+- name: Install Git for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

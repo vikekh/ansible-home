@@ -1,0 +1,6 @@
+---
+
+- name: Install Geforce Game Ready Driver
+  win_chocolatey:
+    name: geforce-game-ready-driver
+    state: latest

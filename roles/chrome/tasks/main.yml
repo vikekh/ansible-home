@@ -1,6 +1,5 @@
 ---
 
-- name: Install Chrome
-  win_chocolatey:
-    name: googlechrome
-    state: latest
+- name: Install Chrome for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

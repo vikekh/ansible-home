@@ -1,7 +1,0 @@
----
-
-- hosts: windows
-  roles:
-    - plex
-    - spotify
-    - tinymediamanager

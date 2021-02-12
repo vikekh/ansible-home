@@ -1,6 +1,5 @@
 ---
 
-- name: Install Discord
-  win_chocolatey:
-    name: discord
-    state: latest
+- name: Install Discord for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

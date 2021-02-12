@@ -1,0 +1,8 @@
+---
+
+- name: Install MakeMKV
+  win_chocolatey:
+    name: makemkv
+    state: latest
+
+# Key: https://www.makemkv.com/forum/viewtopic.php?t=1053

@@ -1,6 +1,5 @@
 ---
 
-- name: Install LibreOffice
-  win_chocolatey:
-    name: libreoffice-fresh
-    state: latest
+- name: Install LibreOffice for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

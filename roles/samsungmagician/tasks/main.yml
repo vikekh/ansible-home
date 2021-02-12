@@ -1,0 +1,6 @@
+---
+
+- name: Install Corsair iCUE
+  win_chocolatey:
+    name: icue # not trusted
+    state: latest

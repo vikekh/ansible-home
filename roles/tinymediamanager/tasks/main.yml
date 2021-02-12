@@ -1,7 +1,5 @@
 ---
 
-- name: Install tinyMediaManager
-  win_chocolatey:
-    name: tinymediamanager
-    version: "3.1.10"
-    pinned: yes
+- name: Install tinyMediaManager for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

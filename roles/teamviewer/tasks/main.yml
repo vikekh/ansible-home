@@ -1,6 +1,5 @@
 ---
 
-- name: Install TeamViewer
-  win_chocolatey:
-    name: teamviewer
-    state: latest
+- name: Install TeamViewer for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

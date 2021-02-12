@@ -1,0 +1,6 @@
+---
+
+- name: Install TeamViewer
+  win_chocolatey:
+    name: teamviewer
+    state: latest

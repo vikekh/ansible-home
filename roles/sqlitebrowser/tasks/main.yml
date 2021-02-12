@@ -1,6 +1,5 @@
 ---
 
-- name: Install DB Browser for SQLite
-  win_chocolatey:
-    name: sqlitebrowser
-    state: latest
+- name: Install DB Browser for SQLite for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

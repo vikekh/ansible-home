@@ -1,6 +1,5 @@
 ---
 
-- name: Install KDiff3
-  win_chocolatey:
-    name: kdiff3
-    state: latest
+- name: Install KDiff3 for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

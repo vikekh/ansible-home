@@ -1,0 +1,6 @@
+---
+
+- name: Install Steam
+  win_chocolatey:
+    name: steam
+    state: latest

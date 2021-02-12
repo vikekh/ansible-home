@@ -1,0 +1,6 @@
+---
+
+- name: Install VLC
+  win_chocolatey:
+    name: vlc
+    state: latest

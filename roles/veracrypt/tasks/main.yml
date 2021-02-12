@@ -1,6 +1,5 @@
 ---
 
-- name: Install VeraCrypt
-  win_chocolatey:
-    name: veracrypt
-    state: latest
+- name: Install VeraCrypt for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

@@ -1,0 +1,6 @@
+---
+
+- name: Install Discord
+  win_chocolatey:
+    name: discord
+    state: latest

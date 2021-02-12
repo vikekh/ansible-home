@@ -1,6 +1,5 @@
 ---
 
-- name: Install 
-  win_chocolatey:
-    name: mkvtoolnix
-    state: latest
+- name: Install MKVToolNix for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

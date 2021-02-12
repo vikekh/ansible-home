@@ -1,6 +1,5 @@
 ---
 
-- name: Install Steam
-  win_chocolatey:
-    name: steam
-    state: latest
+- name: Install Steam for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

@@ -1,9 +1,0 @@
----
-
-- hosts: windows
-  roles:
-    - 7zip
-    - etcher
-    - hashtab # not trusted
-    - imgburn # not trusted
-    - treesize

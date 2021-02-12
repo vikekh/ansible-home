@@ -1,6 +1,5 @@
 ---
 
-- name: Install Duplicati
-  win_chocolatey:
-    name: duplicati # not trusted
-    state: latest
+- name: Install Duplicati for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

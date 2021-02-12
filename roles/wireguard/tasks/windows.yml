@@ -1,0 +1,7 @@
+---
+
+- name: Install WireGuard
+  win_chocolatey:
+    name: wireguard
+    state: latest
+    allow_prerelease: yes

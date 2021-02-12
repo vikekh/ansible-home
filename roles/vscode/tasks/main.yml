@@ -1,46 +1,5 @@
 ---
 
-- name: Install Visual Studio Code
-  win_chocolatey:
-    name: vscode
-    state: latest
-    package_params: /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
-
-- name: Install Ansible extension
-  win_chocolatey:
-    name: vscode-ansible
-    state: latest
-
-- name: Install C# extension
-  win_chocolatey:
-    name: vscode-csharp
-    state: latest
-
-- name: Install Docker extension
-  win_chocolatey:
-    name: vscode-docker
-    state: latest
-
-- name: Install EditorConfig extension
-  win_chocolatey:
-    name: vscode-editorconfig
-    state: latest
-
-- name: Install PowerShell extension
-  win_chocolatey:
-    name: vscode-powershell
-    state: latest
-
-- name: Install YAML extension
-  win_chocolatey:
-    name: vscode-yaml
-    state: latest
-
-- name: Install Remote - Containers extension
-  win_shell: code --install-extension ms-vscode-remote.remote-containers
-
-- name: Install Remote - SSH extension
-  win_shell: code --install-extension ms-vscode-remote.remote-ssh
-
-- name: Install Remote - WSL extension
-  win_shell: code --install-extension ms-vscode-remote.remote-wsl
+- name: Install Visual Studio Code for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

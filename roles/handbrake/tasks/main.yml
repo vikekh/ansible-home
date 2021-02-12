@@ -1,6 +1,5 @@
 ---
 
-- name: Install HandBrake
-  win_chocolatey:
-    name: handbrake
-    state: latest
+- name: Install HandBrake for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

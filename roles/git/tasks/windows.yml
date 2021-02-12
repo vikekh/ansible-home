@@ -1,0 +1,6 @@
+---
+
+- name: Install Git
+  win_chocolatey:
+    name: git
+    state: latest

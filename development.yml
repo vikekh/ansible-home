@@ -1,6 +1,6 @@
 ---
 
-- hosts: windows
+- hosts: all
   roles:
     - docker
     - dotnetcoresdk
@@ -8,7 +8,10 @@
     - kdiff3
     - nodejs
     - sqlitebrowser
+    - vscode
+
+- hosts: windows
+  roles:
     - visualstudio2019
     - visualstudio2019preview
-    - vscode
     - windowsterminal

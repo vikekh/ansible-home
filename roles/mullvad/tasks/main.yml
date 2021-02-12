@@ -1,8 +1,5 @@
 ---
 
-# - name: Install Mullvad
-#   win_chocolatey:
-#     name: mullvad-app
-#     state: latest
-
-#TODO: Install from GitHub
+- name: Install Mullvad for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

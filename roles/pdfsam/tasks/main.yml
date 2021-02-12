@@ -1,6 +1,5 @@
 ---
 
-- name: Install PDFsam
-  win_chocolatey:
-    name: pdfsam
-    state: latest
+- name: Install PDFsam for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

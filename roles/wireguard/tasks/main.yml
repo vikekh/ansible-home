@@ -1,7 +1,5 @@
 ---
 
-- name: Install WireGuard
-  win_chocolatey:
-    name: wireguard
-    state: latest
-    allow_prerelease: yes
+- name: Install WireGuard for Windows
+  when: ansible_os_family == "Windows"
+  include_tasks: windows.yml

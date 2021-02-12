@@ -1,0 +1,11 @@
+---
+
+- name: Install Bitwarden
+  win_chocolatey:
+    name: bitwarden
+    state: latest
+
+- name: Install Bitwarden CLI
+  win_chocolatey:
+    name: bitwarden-cli
+    state: latest
