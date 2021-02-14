@@ -1,0 +1,6 @@
+---
+
+- name: Install svtplay-dl from Scoop
+  community.windows.win_scoop:
+    name: svtplay-dl
+    state: present
