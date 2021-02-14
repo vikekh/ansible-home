@@ -5,7 +5,7 @@
 - import_playbook: development.yml
 - import_playbook: video.yml
 
-- hosts: desktop
+- hosts: desktops
   roles:
     - 7zip
     - discord
