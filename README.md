@@ -1,16 +1,19 @@
 # install
 
+```yml
+# Not working under WSL2
+ansible-galaxy install -r requirements.yml
+```
+
 ## TODO
 
-* Install collections
-  * ansible-galaxy collection install ansible.windows
-  * ansible-galaxy collection install community.windows
 * Chocolatey install switches
 * Regedit disable context menus
 * Taskbar shortcuts https://docs.microsoft.com/en-us/windows/configuration//configure-windows-10-taskbar
 * Optional features
 * Network disks
 * Linux apt packages
+* Install requirements WSL2
 * Possible roles:
   * Checksum
   * FileBot
