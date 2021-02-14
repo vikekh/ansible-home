@@ -29,3 +29,9 @@
     - teamviewer
     - tinymediamanager
     - treesize
+
+- hosts: spirou, spirou2
+  roles:
+    - geforcegamereadydriver
+    - icue
+    - samsungmagician
