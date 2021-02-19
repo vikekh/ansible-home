@@ -1,6 +1,6 @@
 ---
 
-- name: Install Windows Terminal
+- name: Install Windows Terminal from Chocolatey
   win_chocolatey:
     name: microsoft-windows-terminal
     state: latest

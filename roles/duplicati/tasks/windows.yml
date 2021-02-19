@@ -1,6 +1,6 @@
 ---
 
-- name: Install Duplicati
+- name: Install Duplicati from Chocolatey
   win_chocolatey:
     name: duplicati # not trusted
     state: latest

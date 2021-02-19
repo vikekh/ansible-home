@@ -1,6 +1,6 @@
 ---
 
-- name: Install Google Backup and Sync
+- name: Install Google Backup and Sync from Chocolatey
   win_chocolatey:
     name: google-backup-and-sync
     state: latest

@@ -1,6 +1,6 @@
 ---
 
-- name: Install MakeMKV
+- name: Install MakeMKV from Chocolatey
   win_chocolatey:
     name: makemkv
     state: latest

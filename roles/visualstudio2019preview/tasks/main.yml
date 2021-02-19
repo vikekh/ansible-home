@@ -1,6 +1,6 @@
 ---
 
-- name: Install Visual Studio 2019 Community Preview
+- name: Install Visual Studio 2019 Community Preview from Chocolatey
   win_chocolatey:
     name: visualstudio2019community-preview
     state: latest

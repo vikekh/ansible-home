@@ -4,3 +4,4 @@
   win_chocolatey:
     name: git
     state: latest
+    package_params: /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration

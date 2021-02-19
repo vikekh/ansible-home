@@ -1,6 +1,6 @@
 ---
 
-- name: Install Syncthing
+- name: Install Syncthing from Chocolatey
   win_chocolatey:
     name: syncthing
     state: latest

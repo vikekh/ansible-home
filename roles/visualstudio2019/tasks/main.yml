@@ -1,6 +1,6 @@
 ---
 
-- name: Install Visual Studio 2019 Community
+- name: Install Visual Studio 2019 Community from Chocolatey
   win_chocolatey:
     name: visualstudio2019community
     state: latest

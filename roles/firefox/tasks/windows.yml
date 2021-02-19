@@ -1,6 +1,7 @@
 ---
 
-- name: Install Firefox
+- name: Install Firefox from Chocolatey
   win_chocolatey:
     name: firefox
     state: latest
+    package_params: /NoTaskbarShortcut /NoDesktopShortcut

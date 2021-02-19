@@ -1,6 +1,6 @@
 ---
 
-- name: Install LibreOffice
+- name: Install LibreOffice from Chocolatey
   win_chocolatey:
     name: libreoffice-fresh
     state: latest

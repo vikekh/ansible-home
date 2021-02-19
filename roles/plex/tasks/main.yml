@@ -1,6 +1,6 @@
 ---
 
-- name: Install Plex
+- name: Install Plex from Chocolatey
   win_chocolatey:
     name: plex
     state: latest

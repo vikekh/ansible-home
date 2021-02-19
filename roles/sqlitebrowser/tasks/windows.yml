@@ -1,6 +1,6 @@
 ---
 
-- name: Install DB Browser for SQLite
+- name: Install DB Browser for SQLite from Chocolatey
   win_chocolatey:
     name: sqlitebrowser
     state: latest

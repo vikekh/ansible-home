@@ -1,6 +1,6 @@
 ---
 
-- name: Install Chrome
+- name: Install Chrome from Chocolatey
   win_chocolatey:
     name: googlechrome
     state: latest

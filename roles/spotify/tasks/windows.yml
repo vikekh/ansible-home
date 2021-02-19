@@ -1,6 +1,6 @@
 ---
 
-- name: Install Spotify
+- name: Install Spotify from Chocolatey
   win_chocolatey:
     name: spotify
     state: latest

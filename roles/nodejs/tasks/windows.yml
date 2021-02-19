@@ -1,6 +1,6 @@
 ---
 
-- name: Install Node.js
+- name: Install Node.js from Chocolatey
   win_chocolatey:
     name: nodejs
     state: latest

@@ -1,6 +1,6 @@
 ---
 
-- name: Install HandBrake
+- name: Install HandBrake from Chocolatey
   win_chocolatey:
     name: handbrake
     state: latest

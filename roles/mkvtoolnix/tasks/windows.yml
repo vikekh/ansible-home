@@ -1,6 +1,6 @@
 ---
 
-- name: Install MKVToolNix
+- name: Install MKVToolNix from Chocolatey
   win_chocolatey:
     name: mkvtoolnix
     state: latest

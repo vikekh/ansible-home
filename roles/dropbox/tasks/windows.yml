@@ -1,6 +1,6 @@
 ---
 
-- name: Install Dropbox
+- name: Install Dropbox from Chocolatey
   win_chocolatey:
     name: dropbox
     state: latest

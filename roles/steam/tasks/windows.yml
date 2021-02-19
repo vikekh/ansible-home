@@ -1,6 +1,6 @@
 ---
 
-- name: Install Steam
+- name: Install Steam from Chocolatey
   win_chocolatey:
     name: steam
     state: latest

@@ -1,6 +1,6 @@
 ---
 
-- name: Install Corsair iCUE
+- name: Install Samsung Magician from Chocolatey
   win_chocolatey:
-    name: icue # not trusted
+    name: samsung-magician
     state: latest

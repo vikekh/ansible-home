@@ -1,6 +1,6 @@
 ---
 
-- name: Install WireGuard
+- name: Install WireGuard from Chocolatey
   win_chocolatey:
     name: wireguard
     state: latest
