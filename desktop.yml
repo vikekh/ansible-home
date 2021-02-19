@@ -1,5 +1,11 @@
 ---
 
+- hosts: spirou, spirou2
+  roles:
+    - geforcegamereadydriver
+    - icue
+    - samsungmagician
+
 - import_playbook: chocolatey.yml
 - import_playbook: common.yml
 - import_playbook: development.yml
@@ -11,7 +17,6 @@
     - discord
     - chrome
     - etcher
-    - geforcegamereadydriver
     - googlebackupandsync
     - hashtab # not trusted
     - imgburn # not trusted
@@ -22,16 +27,9 @@
     - paintnet
     - plex
     - pdfsam
-    - samsungmagician
     - steam
     - svtplaydl
     # - syncthing
     - teamviewer
     - tinymediamanager
     - treesize
-
-- hosts: spirou, spirou2
-  roles:
-    - geforcegamereadydriver
-    - icue
-    - samsungmagician
