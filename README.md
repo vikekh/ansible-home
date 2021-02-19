@@ -22,3 +22,5 @@ ansible-galaxy install -r requirements.yml
   * TestDisk and PhotoRec
   * Universal Silent Switch Finder
   * Win32 Disk Imager
+  * Logitech G HUB https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
+  * HWMonitor, CPU-Z, GPU-Z, HD Tune, Speedfan
