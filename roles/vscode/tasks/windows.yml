@@ -1,37 +1,37 @@
 ---
 
-- name: Install Visual Studio Code
+- name: Install Visual Studio Code from Chocolatey
   win_chocolatey:
     name: vscode
     state: latest
     package_params: /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
 
-- name: Install Ansible extension
+- name: Install Ansible extension from Chocolatey
   win_chocolatey:
     name: vscode-ansible
     state: latest
 
-- name: Install C# extension
+- name: Install C# extension from Chocolatey
   win_chocolatey:
     name: vscode-csharp
     state: latest
 
-- name: Install Docker extension
+- name: Install Docker extension from Chocolatey
   win_chocolatey:
     name: vscode-docker
     state: latest
 
-- name: Install EditorConfig extension
+- name: Install EditorConfig extension from Chocolatey
   win_chocolatey:
     name: vscode-editorconfig
     state: latest
 
-- name: Install PowerShell extension
+- name: Install PowerShell extension from Chocolatey
   win_chocolatey:
     name: vscode-powershell
     state: latest
 
-- name: Install YAML extension
+- name: Install YAML extension from Chocolatey
   win_chocolatey:
     name: vscode-yaml
     state: latest
