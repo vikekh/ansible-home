@@ -1,0 +1,8 @@
+---
+
+- hosts: spirou, spirou2
+  roles:
+    - role: map_network_drives
+      server: "{{ nas_server }}"
+      username: "{{ nas_username }}"
+      password: "{{ nas_password }}"

@@ -1,0 +1,49 @@
+---
+
+- name: "Map network drive \\\\{{ server }}\\backup to B:"
+  win_mapped_drive:
+    letter: B
+    path: "\\\\{{ server }}\\backup"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
+
+- name: "Map network drive \\\\{{ server }}\\home to H:"
+  win_mapped_drive:
+    letter: H
+    path: "\\\\{{ server }}\\home"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
+
+- name: "Map network drive \\\\{{ server }}\\downloads to L:"
+  win_mapped_drive:
+    letter: L
+    path: "\\\\{{ server }}\\downloads"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
+
+- name: "Map network drive \\\\{{ server }}\\media to M:"
+  win_mapped_drive:
+    letter: M
+    path: "\\\\{{ server }}\\media"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
+
+- name: "Map network drive \\\\{{ server }}\\photo to P:"
+  win_mapped_drive:
+    letter: P
+    path: "\\\\{{ server }}\\photo"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
+
+- name: "Map network drive \\\\{{ server }}\\shared to S:"
+  win_mapped_drive:
+    letter: S
+    path: "\\\\{{ server }}\\shared"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    state: present
