@@ -18,9 +18,13 @@
     - 7zip
     - discord
     - chrome
+    - cpuz
     - etcher
     - googlebackupandsync
+    - gpuz
     - hashtab # not trusted
+    - hdtune # not trusted
+    - hwmonitor
     - imgburn # not trusted
     - libreoffice
     - malwarebytes
@@ -29,6 +33,7 @@
     - paintnet
     - plex
     - pdfsam
+    - speedfan # not trusted
     - steam
     - svtplaydl
     # - syncthing

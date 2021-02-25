@@ -1,0 +1,6 @@
+---
+
+- name: Install SpeedFan from Chocolatey # not trusted
+  win_chocolatey:
+    name: speedfan
+    state: latest

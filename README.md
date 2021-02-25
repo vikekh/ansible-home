@@ -27,4 +27,4 @@ get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table Identifyi
   * TestDisk and PhotoRec
   * Universal Silent Switch Finder
   * Win32 Disk Imager
-  * HWMonitor, CPU-Z, GPU-Z, HD Tune, Speedfan
+  * LG OnScreen Control

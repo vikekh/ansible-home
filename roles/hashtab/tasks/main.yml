@@ -1,6 +1,6 @@
 ---
 
-- name: Install HashTab # not trusted
+- name: Install HashTab from Chocolatey # not trusted
   win_chocolatey:
     name: hashtab
     state: latest

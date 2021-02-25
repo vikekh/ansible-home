@@ -1,0 +1,6 @@
+---
+
+- name: Install GPU-Z Portable from Chocolatey
+  win_chocolatey:
+    name: gpu-z
+    state: latest

@@ -1,0 +1,6 @@
+---
+
+- name: Install CPU-Z from Chocolatey
+  win_chocolatey:
+    name: cpu-z
+    state: latest

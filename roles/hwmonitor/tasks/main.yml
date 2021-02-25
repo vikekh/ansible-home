@@ -1,0 +1,6 @@
+---
+
+- name: Install HWMonitor from Chocolatey
+  win_chocolatey:
+    name: hwmonitor
+    state: latest
