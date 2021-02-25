@@ -1,0 +1,6 @@
+---
+
+- name: Install GeForce Experience from Chocolatey
+  win_chocolatey:
+    name: geforce-experience
+    state: latest

@@ -2,7 +2,8 @@
 
 - hosts: spirou
   roles:
-    - geforcegamereadydriver
+    - geforceexperience
+    # - geforcegamereadydriver
     - icue
     - ghub
     - samsungmagician
