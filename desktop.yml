@@ -1,9 +1,10 @@
 ---
 
-- hosts: spirou, spirou2
+- hosts: spirou
   roles:
     - geforcegamereadydriver
     - icue
+    - ghub
     - samsungmagician
 
 - import_playbook: chocolatey.yml

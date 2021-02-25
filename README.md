@@ -5,14 +5,19 @@
 ansible-galaxy install -r requirements.yml
 ```
 
+```ps
+# Get application/product ID
+get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+```
+
 ## TODO
 
 * Chocolatey install switches
 * Regedit disable context menus
 * Taskbar shortcuts https://docs.microsoft.com/en-us/windows/configuration//configure-windows-10-taskbar
 * Optional features
-* Network disks
 * Linux apt packages
+* Wifi card drivers
 * Install requirements WSL2
 * Possible roles:
   * Checksum
@@ -22,5 +27,4 @@ ansible-galaxy install -r requirements.yml
   * TestDisk and PhotoRec
   * Universal Silent Switch Finder
   * Win32 Disk Imager
-  * Logitech G HUB https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
   * HWMonitor, CPU-Z, GPU-Z, HD Tune, Speedfan
