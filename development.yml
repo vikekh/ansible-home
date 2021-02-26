@@ -9,7 +9,7 @@
     - nodejs
     - sqlitebrowser
     - vscode
-    # - vscodeinsiders
+    # - vscodeinsiders # not working
 
 - hosts: windows
   roles:
