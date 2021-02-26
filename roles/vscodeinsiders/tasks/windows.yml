@@ -1,0 +1,7 @@
+---
+
+- name: Install Visual Studio Code Insiders from code.visualstudio.com
+  ansible.windows.win_package:
+    path: https://code.visualstudio.com/sha/download?build=insider&os=win32-x64-user
+    product_id: 
+    state: present

@@ -1,6 +1,6 @@
 ---
 
-- name: Install Logitech G HUB from downloaded .exe
+- name: Install Logitech G HUB download01.logi.com
   ansible.windows.win_package:
     path: https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
     product_id: "{521c89be-637f-4274-a840-baaf7460c2b2}"

@@ -10,6 +10,8 @@ ansible-galaxy install -r requirements.yml
 get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
 ```
 
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
+
 ## TODO
 
 * Chocolatey install switches
@@ -19,12 +21,10 @@ get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table Identifyi
 * Linux apt packages
 * Wifi card drivers https://www.asus.com/se/Networking-IoT-Servers/Adapters/All-series/PCEAC68/HelpDesk_Download/
 * Install requirements WSL2
+* VS2019 workloads
 * Possible roles:
   * Checksum
   * FileBot
-  * Recuva
-  * TagSpaces
-  * TestDisk and PhotoRec
   * Universal Silent Switch Finder
   * Win32 Disk Imager
   * LG OnScreen Control
