@@ -1,0 +1,6 @@
+---
+
+- name: Install TestDisk + PhotoRec from Chocolatey
+  win_chocolatey:
+    name: testdisk-photorec
+    state: latest

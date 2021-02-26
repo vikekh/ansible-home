@@ -17,7 +17,7 @@ get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table Identifyi
 * Taskbar shortcuts https://docs.microsoft.com/en-us/windows/configuration//configure-windows-10-taskbar
 * Optional features
 * Linux apt packages
-* Wifi card drivers
+* Wifi card drivers https://www.asus.com/se/Networking-IoT-Servers/Adapters/All-series/PCEAC68/HelpDesk_Download/
 * Install requirements WSL2
 * Possible roles:
   * Checksum

@@ -1,0 +1,6 @@
+---
+
+- name: Install Recuva from Chocolatey # not trusted
+  win_chocolatey:
+    name: recuva
+    state: latest

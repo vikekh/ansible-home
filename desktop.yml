@@ -34,10 +34,16 @@
     - paintnet
     - plex
     - pdfsam
+    # - recuva # not trusted
+    - scummvm # not trusted
+    - slack
     - speedfan # not trusted
     - steam
     - svtplaydl
     # - syncthing
+    # - tagspaces
     - teamviewer
+    # - testdiskphotorec
     - tinymediamanager
     - treesize
+    - wifiinfoview

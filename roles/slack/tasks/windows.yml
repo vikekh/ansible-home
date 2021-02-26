@@ -1,0 +1,6 @@
+---
+
+- name: Install Slack from Chocolatey
+  win_chocolatey:
+    name: slack
+    state: latest
