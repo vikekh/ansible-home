@@ -5,3 +5,17 @@
     name: visualstudio2019community
     state: latest
     #package_params:
+
+- name: Set HKCR:\Directory\Background\shell\AnyCode
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\Background\shell\AnyCode
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Directory\shell\AnyCode
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\shell\AnyCode
+    name: LegacyDisable
+    data: ""
+    type: string

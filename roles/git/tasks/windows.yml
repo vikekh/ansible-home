@@ -5,3 +5,31 @@
     name: git
     state: latest
     package_params: /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration
+
+- name: Set HKCR:\Directory\Background\shell\git_gui
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\Background\shell\git_gui
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Directory\Background\shell\git_shell
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\Background\shell\git_shell
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Directory\shell\git_gui
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\shell\git_gui
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Directory\shell\git_shell
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\shell\git_shell
+    name: LegacyDisable
+    data: ""
+    type: string

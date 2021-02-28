@@ -4,3 +4,17 @@
   win_chocolatey:
     name: vlc
     state: latest
+
+- name: Set HKCR:\Directory\shell\AddToPlaylistVLC
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\shell\AddToPlaylistVLC
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Directory\shell\PlayWithVLC
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\shell\PlayWithVLC
+    name: LegacyDisable
+    data: ""
+    type: string

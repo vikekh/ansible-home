@@ -4,3 +4,17 @@
   win_chocolatey:
     name: treesizefree
     state: latest
+
+- name: Set HKCR:\Directory\Background\shell\TreeSize Free
+  ansible.windows.win_regedit:
+    path: HKCR:\Directory\Background\shell\TreeSize Free
+    name: LegacyDisable
+    data: ""
+    type: string
+
+- name: Set HKCR:\Folder\shell\TreeSize Free
+  ansible.windows.win_regedit:
+    path: HKCR:\Folder\shell\TreeSize Free
+    name: LegacyDisable
+    data: ""
+    type: string
