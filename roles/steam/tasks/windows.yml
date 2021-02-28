@@ -4,3 +4,8 @@
   win_chocolatey:
     name: steam
     state: latest
+
+- name: Remove C:\Users\Public\Public Desktop\Steam.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Public Desktop\Steam.lnk
+    state: absent

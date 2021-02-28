@@ -9,3 +9,8 @@
   win_chocolatey:
     name: bitwarden-cli
     state: latest
+
+- name: Remove C:\Users\Public\Public Desktop\Bitwarden.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Public Desktop\Bitwarden.lnk
+    state: absent

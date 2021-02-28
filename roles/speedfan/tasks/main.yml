@@ -4,3 +4,8 @@
   win_chocolatey:
     name: speedfan
     state: latest
+
+- name: Remove %USERPROFILE&\Desktop\SpeedFan.lnk
+  ansible.windows.win_file:
+    path: "%USERPROFILE%\\Desktop\\SpeedFan.lnk"
+    state: absent

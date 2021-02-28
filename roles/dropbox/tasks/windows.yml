@@ -4,3 +4,8 @@
   win_chocolatey:
     name: dropbox
     state: latest
+
+- name: Remove %USERPROFILE&\Desktop\Dropbox.lnk
+  ansible.windows.win_file:
+    path: "%USERPROFILE%\\Desktop\\Dropbox.lnk"
+    state: absent

@@ -4,3 +4,8 @@
   win_chocolatey:
     name: scummvm
     state: latest
+
+- name: Remove %USERPROFILE&\Desktop\ScummVM.lnk
+  ansible.windows.win_file:
+    path: "%USERPROFILE%\\Desktop\\ScummVM.lnk"
+    state: absent

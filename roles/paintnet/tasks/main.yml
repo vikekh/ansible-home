@@ -4,3 +4,8 @@
   win_chocolatey:
     name: paint.net
     state: latest
+
+- name: Remove C:\Users\Public\Public Desktop\paint.net.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Public Desktop\paint.net.lnk
+    state: absent
