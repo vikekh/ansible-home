@@ -6,7 +6,7 @@
     - geforceexperience
     # - geforcegamereadydriver
     - icue
-    - ghub
+    # - ghub # not working
     - samsungmagician
 
 - import_playbook: chocolatey.yml
@@ -33,18 +33,21 @@
     - msteams
     # - mullvad # not working
     - paintnet
+    - playnite
     - plex
     - pdfsam
-    # - recuva # not trusted
+    - recuva # not trusted
     - scummvm # not trusted
+    - shellexview # not trusted
+    - shellmenuview
     - slack
     - speedfan # not trusted
     - steam
     - svtplaydl
-    # - syncthing
-    # - tagspaces
+    - syncthing
+    - tagspaces
     - teamviewer
-    # - testdiskphotorec
+    - testdiskphotorec
     - tinymediamanager
     - treesize
     - wifiinfoview

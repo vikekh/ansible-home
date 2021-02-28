@@ -1,0 +1,6 @@
+---
+
+- name: Install Samsung Magician from Chocolatey
+  win_chocolatey:
+    name: samsung-magician
+    state: latest

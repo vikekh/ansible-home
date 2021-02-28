@@ -1,0 +1,6 @@
+---
+
+- name: Install ShellMenuView from Chocolatey
+  win_chocolatey:
+    name: shmnview
+    state: latest

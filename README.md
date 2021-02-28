@@ -28,3 +28,4 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
   * Universal Silent Switch Finder
   * Win32 Disk Imager
   * LG OnScreen Control
+  * Depressurizer

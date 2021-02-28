@@ -1,0 +1,6 @@
+---
+
+- name: Install Playnite from Chocolatey
+  win_chocolatey:
+    name: samsung-magician
+    state: latest
