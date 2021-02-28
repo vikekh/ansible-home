@@ -1,6 +1,6 @@
 ---
 
-- name: Install Samsung Magician from Chocolatey
+- name: Install ShellMenuView from Chocolatey
   win_chocolatey:
-    name: samsung-magician
+    name: shmnview
     state: latest

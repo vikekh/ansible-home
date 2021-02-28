@@ -1,6 +1,6 @@
 ---
 
-- name: Install ShellMenuView from Chocolatey
+- name: Install ShellExView from Chocolatey
   win_chocolatey:
-    name: shmnview
+    name: shexview
     state: latest
