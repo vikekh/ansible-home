@@ -5,7 +5,7 @@
     name: playnite
     state: latest
 
-- name: Remove %USERPROFILE&\Desktop\Playnite.lnk
+- name: Remove %USERPROFILE%\Desktop\Playnite.lnk
   ansible.windows.win_file:
     path: "%USERPROFILE%\\Desktop\\Playnite.lnk"
     state: absent

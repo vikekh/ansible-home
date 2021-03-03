@@ -5,7 +5,7 @@
     name: spotify
     state: latest
 
-- name: Remove %USERPROFILE&\Desktop\Spotify.lnk
+- name: Remove %USERPROFILE%\Desktop\Spotify.lnk
   ansible.windows.win_file:
     path: "%USERPROFILE%\\Desktop\\Spotify.lnk"
     state: absent

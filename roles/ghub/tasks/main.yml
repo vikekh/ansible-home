@@ -6,7 +6,7 @@
     product_id: "{521c89be-637f-4274-a840-baaf7460c2b2}"
     state: present
 
-- name: Remove C:\Users\Public\Public Desktop\Logitech G HUB.lnk
+- name: Remove C:\Users\Public\Desktop\Logitech G HUB.lnk
   ansible.windows.win_file:
-    path: C:\Users\Public\Public Desktop\Logitech G HUB.lnk
+    path: C:\Users\Public\Desktop\Logitech G HUB.lnk
     state: absent

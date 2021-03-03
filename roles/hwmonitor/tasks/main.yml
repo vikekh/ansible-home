@@ -5,7 +5,7 @@
     name: hwmonitor
     state: latest
 
-- name: Remove C:\Users\Public\Public Desktop\CPUID HWMonitor.lnk
+- name: Remove C:\Users\Public\Desktop\CPUID HWMonitor.lnk
   ansible.windows.win_file:
-    path: C:\Users\Public\Public Desktop\CPUID HWMonitor.lnk
+    path: C:\Users\Public\Desktop\CPUID HWMonitor.lnk
     state: absent

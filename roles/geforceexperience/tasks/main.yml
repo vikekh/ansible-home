@@ -5,7 +5,7 @@
     name: geforce-experience
     state: latest
 
-- name: Remove C:\Users\Public\Public Desktop\GeForce Experience.lnk
+- name: Remove C:\Users\Public\Desktop\GeForce Experience.lnk
   ansible.windows.win_file:
-    path: C:\Users\Public\Public Desktop\GeForce Experience.lnk
+    path: C:\Users\Public\Desktop\GeForce Experience.lnk
     state: absent

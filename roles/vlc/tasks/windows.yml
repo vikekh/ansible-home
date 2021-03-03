@@ -5,9 +5,9 @@
     name: vlc
     state: latest
 
-- name: Remove C:\Users\Public\Public Desktop\VLC media player.lnk
+- name: Remove C:\Users\Public\Desktop\VLC media player.lnk
   ansible.windows.win_file:
-    path: C:\Users\Public\Public Desktop\VLC media player.lnk
+    path: C:\Users\Public\Desktop\VLC media player.lnk
     state: absent
 
 - name: Set HKCR:\Directory\shell\AddToPlaylistVLC
