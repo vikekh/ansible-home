@@ -36,11 +36,11 @@
     name: vscode-yaml
     state: latest
 
-- name: Install Remote - Containers extension
-  win_shell: code --install-extension ms-vscode-remote.remote-containers
+#- name: Install Remote - Containers extension
+#  win_shell: code --install-extension ms-vscode-remote.remote-containers
 
-- name: Install Remote - SSH extension
-  win_shell: code --install-extension ms-vscode-remote.remote-ssh
+#- name: Install Remote - SSH extension
+#  win_shell: code --install-extension ms-vscode-remote.remote-ssh
 
-- name: Install Remote - WSL extension
-  win_shell: code --install-extension ms-vscode-remote.remote-wsl
+#- name: Install Remote - WSL extension
+#  win_shell: code --install-extension ms-vscode-remote.remote-wsl

@@ -1,53 +1,31 @@
 ---
 
-- hosts: spirou
+- import_playbook: chocolatey.yml
+- import_playbook: common.yml
+# - import_playbook: map_network_drives.yml
+
+- hosts: desktop
   roles:
     # - asuspceac68 # not working
     - geforceexperience
     # - geforcegamereadydriver
     - icue
     # - ghub # not working
-    - samsungmagician
+    - samsungmagician # not installing
 
-- import_playbook: chocolatey.yml
-- import_playbook: common.yml
-- import_playbook: map_network_drives.yml
-- import_playbook: development.yml
-- import_playbook: video.yml
-
-- hosts: desktops
-  roles:
-    - 7zip
-    - discord
     - chrome
-    - cpuz
-    - etcher
-    - googlebackupandsync
-    - gpuz
-    - hashtab # not trusted
-    - hdtune # not trusted
-    - hwmonitor
-    - imgburn # not trusted
-    - libreoffice
-    - malwarebytes
+    - discord
     - msteams
     # - mullvad # not working
     - paintnet
-    - playnite
-    - plex
-    - pdfsam
-    - recuva # not trusted
-    - scummvm # not trusted
-    - shellexview # not trusted
-    - shellmenuview
-    - slack
-    - speedfan # not trusted
+    # - playnite
+    # - scummvm # not trusted
+    # - slack
     - steam
-    - svtplaydl
-    - syncthing
-    - tagspaces
-    - teamviewer
-    - testdiskphotorec
-    - tinymediamanager
-    - treesize
-    - wifiinfoview
+    # - tagspaces
+
+- import_playbook: development.yml
+- import_playbook: media.yml
+- import_playbook: office.yml
+- import_playbook: utils.yml
+- import_playbook: video.yml

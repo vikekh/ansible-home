@@ -1,0 +1,22 @@
+---
+
+- hosts: windows
+  roles:
+    - 7zip
+    - cpuz
+    # - etcher
+    - gpuz
+    # - hashtab # not trusted
+    - hdtune # not trusted
+    - hwmonitor
+    # - imgburn # not trusted
+    # - malwarebytes
+    # - recuva # not trusted
+    - shellexview # not trusted
+    - shellmenuview
+    - speedfan # not trusted
+    # - syncthing
+    - teamviewer
+    # - testdiskphotorec
+    - treesize
+    - wifiinfoview

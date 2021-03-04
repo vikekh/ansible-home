@@ -29,3 +29,5 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
   * Win32 Disk Imager
   * LG OnScreen Control
   * Depressurizer
+* Set default apps
+* Setup real NuGet repository

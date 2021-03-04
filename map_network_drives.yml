@@ -1,6 +1,6 @@
 ---
 
-- hosts: spirou, spirou2
+- hosts: windows
   roles:
     - role: map_network_drives
       server: "{{ nas_server }}"

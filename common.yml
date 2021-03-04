@@ -7,6 +7,10 @@
     - duplicati
     - firefox
     - spotify
-    - veracrypt
+    - veracrypt # not installing
     - vlc
     - wireguard
+
+- hosts: windows
+  roles:
+    - googlebackupandsync
