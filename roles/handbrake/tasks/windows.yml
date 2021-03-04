@@ -4,3 +4,8 @@
   win_chocolatey:
     name: handbrake
     state: latest
+
+- name: Remove C:\Users\Public\Desktop\HandBrake.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\HandBrake.lnk
+    state: absent

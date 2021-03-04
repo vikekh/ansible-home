@@ -4,3 +4,23 @@
   win_chocolatey:
     name: google-backup-and-sync
     state: latest
+
+- name: Remove C:\Users\Public\Desktop\Google Docs.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\Google Docs.lnk
+    state: absent
+
+- name: Remove C:\Users\Public\Desktop\Google Sheets.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\Google Sheets.lnk
+    state: absent
+
+- name: Remove C:\Users\Public\Desktop\Google Slides.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\Google Slides.lnk
+    state: absent
+
+- name: Remove %USERPROFILE%\Desktop\Google Drive.lnk
+  ansible.windows.win_file:
+    path: "%USERPROFILE%\\Desktop\\Google Drive.lnk"
+    state: absent

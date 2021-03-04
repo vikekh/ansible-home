@@ -30,4 +30,6 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
   * LG OnScreen Control
   * Depressurizer
 * Set default apps
+* Autostart apps
 * Setup real NuGet repository
+* etc/hosts

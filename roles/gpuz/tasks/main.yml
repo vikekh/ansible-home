@@ -4,3 +4,8 @@
   win_chocolatey:
     name: gpu-z
     state: latest
+
+- name: Remove C:\Users\Public\Desktop\GPU-Z.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\GPU-Z.lnk
+    state: absent

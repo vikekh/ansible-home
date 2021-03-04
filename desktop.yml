@@ -17,7 +17,7 @@
     - discord
     - msteams
     # - mullvad # not working
-    - paintnet
+    - paintnet # not installing
     # - playnite
     # - scummvm # not trusted
     # - slack

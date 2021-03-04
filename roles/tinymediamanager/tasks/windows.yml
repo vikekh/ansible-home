@@ -3,5 +3,10 @@
 - name: Install tinyMediaManager v3.1.10 from Chocolatey
   win_chocolatey:
     name: tinymediamanager
-    version: "3.1.10"
+    version: 3.1.10
     pinned: yes
+
+- name: Remove C:\Users\Public\Desktop\tinyMediaManager.lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\tinyMediaManager.lnk
+    state: absent

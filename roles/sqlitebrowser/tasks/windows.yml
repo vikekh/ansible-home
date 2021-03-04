@@ -4,3 +4,13 @@
   win_chocolatey:
     name: sqlitebrowser
     state: latest
+
+- name: Remove C:\Users\Public\Desktop\DB Browser (SQLCipher).lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\DB Browser (SQLCipher).lnk
+    state: absent
+
+- name: Remove C:\Users\Public\Desktop\DB Browser (SQLite).lnk
+  ansible.windows.win_file:
+    path: C:\Users\Public\Desktop\DB Browser (SQLite).lnk
+    state: absent
