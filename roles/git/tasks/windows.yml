@@ -33,3 +33,5 @@
     name: LegacyDisable
     data: ""
     type: string
+
+# Remember SSH passphrase: https://gist.github.com/danieldogeanu/16c61e9b80345c5837b9e5045a701c99
