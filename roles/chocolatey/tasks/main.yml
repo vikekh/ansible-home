@@ -9,3 +9,5 @@
   win_chocolatey:
     name: chocolateygui
     state: latest
+
+# choco feature enable -n allowGlobalConfirmation
