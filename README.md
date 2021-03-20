@@ -34,5 +34,4 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
 * Set default apps
 * Autostart apps
 * etc/hosts
-* Set Chocolatey package source
 * https://www.howtogeek.com/howto/5270/quick-tip-disable-search-history-display-in-windows-7/

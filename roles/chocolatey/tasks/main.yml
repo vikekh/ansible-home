@@ -5,9 +5,23 @@
     name: chocolatey
     state: latest
 
+- name: Disable Chocolatey source
+  win_chocolatey_source:
+    name: chocolatey
+    state: disabled
+
+- name: Add nexus.fantasio.local source
+  win_chocolatey_source:
+    name: nexus
+    state: present
+    source: http://nexus.fantasio.local/repository/chocolatey-group/
+
+- name: Enable allowGlobalConfirmation
+  win_chocolatey_feature:
+    name: allowGlobalConfirmation
+    state: enabled
+
 - name: Install Chocolatey GUI
   win_chocolatey:
     name: chocolateygui
     state: latest
-
-# choco feature enable -n allowGlobalConfirmation
