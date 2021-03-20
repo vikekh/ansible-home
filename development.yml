@@ -14,5 +14,5 @@
 - hosts: windows
   roles:
     - visualstudio2019
-    - visualstudio2019preview
+    - visualstudio2019preview # not installing
     - windowsterminal
