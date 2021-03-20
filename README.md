@@ -28,8 +28,11 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
   * Universal Silent Switch Finder
   * Win32 Disk Imager
   * LG OnScreen Control
-  * Depressurizer
+  * Messenger
+  * Origin (Chocolatey) - has package parameters
+  * Azure CLI
 * Set default apps
 * Autostart apps
-* Setup real NuGet repository
 * etc/hosts
+* Set Chocolatey package source
+* https://www.howtogeek.com/howto/5270/quick-tip-disable-search-history-display-in-windows-7/
