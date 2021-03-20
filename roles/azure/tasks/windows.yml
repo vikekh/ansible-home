@@ -1,0 +1,6 @@
+---
+
+- name: Install Azure CLI from Chocolatey
+  win_chocolatey:
+    name: azure-cli
+    state: latest
