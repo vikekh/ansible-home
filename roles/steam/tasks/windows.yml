@@ -1,9 +1,12 @@
 ---
 
-- name: Install Steam from Chocolatey
-  win_chocolatey:
-    name: steam
-    state: latest
+# - name: Install Steam from Chocolatey
+#   win_chocolatey:
+#     name: steam
+#     state: latest
+
+- name: "Install Steam from WinGet"
+  ansible.windows.win_command: "winget install --id=Valve.Steam -e"
 
 - name: Remove C:\Users\Public\Desktop\Steam.lnk
   ansible.windows.win_file:

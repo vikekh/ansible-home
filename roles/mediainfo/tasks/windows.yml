@@ -1,0 +1,11 @@
+---
+
+- name: "Install MediaInfo from WinGet"
+  ansible.windows.win_command: "winget install --id=MediaArea.MediaInfo-GUI -e"
+
+- name: Remove %USERPROFILE%\Desktop\MakeMKV.lnk
+  ansible.windows.win_file:
+    path: "%USERPROFILE%\\Desktop\\MakeMKV.lnk"
+    state: absent
+
+# Key: https://www.makemkv.com/forum/viewtopic.php?t=1053

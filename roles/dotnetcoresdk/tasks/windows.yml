@@ -1,6 +1,0 @@
----
-
-- name: Install .NET Core SDK from Chocolatey
-  win_chocolatey:
-    name: dotnetcore-sdk
-    state: latest

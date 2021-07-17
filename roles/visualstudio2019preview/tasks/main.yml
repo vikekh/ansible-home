@@ -1,8 +1,11 @@
 ---
 
-- name: Install Visual Studio 2019 Community Preview from Chocolatey
-  win_chocolatey:
-    name: visualstudio2019community-preview
-    state: latest
-    allow_prerelease: yes
-    #TODO: package_params:
+# - name: Install Visual Studio 2019 Community Preview from Chocolatey
+#   win_chocolatey:
+#     name: visualstudio2019community-preview
+#     state: latest
+#     allow_prerelease: yes
+#     #package_params:
+
+- name: "Install Visual Studio Community 2019 Preview from WinGet"
+  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudio.2019.Community-Preview -e"

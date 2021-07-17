@@ -1,10 +1,11 @@
 ---
 
-[]
-
 # - name: Install Mullvad
 #   win_chocolatey:
 #     name: mullvad-app
 #     state: latest
+
+- name: "Install Mullvad VPN from WinGet"
+  ansible.windows.win_command: "winget install --id=MullvadVPN.MullvadVPN -e"
 
 #TODO: Install from GitHub

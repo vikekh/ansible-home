@@ -1,9 +1,12 @@
 ---
 
-- name: Install LibreOffice from Chocolatey
-  win_chocolatey:
-    name: libreoffice-fresh
-    state: latest
+# - name: Install LibreOffice from Chocolatey
+#   win_chocolatey:
+#     name: libreoffice-fresh
+#     state: latest
+
+- name: "Install LibreOffice from WinGet"
+  ansible.windows.win_command: "winget install --id=LibreOffice.LibreOffice -e"
 
 - name: Remove C:\Users\Public\Desktop\LibreOffice 7.1.lnk
   ansible.windows.win_file:

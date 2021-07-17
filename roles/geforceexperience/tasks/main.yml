@@ -1,9 +1,12 @@
 ---
 
-- name: Install GeForce Experience from Chocolatey
-  win_chocolatey:
-    name: geforce-experience
-    state: latest
+# - name: Install GeForce Experience from Chocolatey
+#   win_chocolatey:
+#     name: geforce-experience
+#     state: latest
+
+- name: "Install Nvidia GeForce Experience from WinGet"
+  ansible.windows.win_command: "winget install --id=Nvidia.GeForceExperience -e"
 
 - name: Remove C:\Users\Public\Desktop\GeForce Experience.lnk
   ansible.windows.win_file:

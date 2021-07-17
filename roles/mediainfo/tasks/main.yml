@@ -1,5 +1,5 @@
 ---
 
-- name: Install .NET Core SDK for Windows
+- name: Install MediaInfo for Windows
   when: ansible_os_family == "Windows"
   include_tasks: windows.yml

@@ -1,10 +1,13 @@
 ---
 
-- name: Install Visual Studio 2019 Community from Chocolatey
-  win_chocolatey:
-    name: visualstudio2019community
-    state: latest
-    #package_params:
+# - name: Install Visual Studio 2019 Community from Chocolatey
+#   win_chocolatey:
+#     name: visualstudio2019community
+#     state: latest
+#     #package_params:
+
+- name: "Install Visual Studio Community 2019 from WinGet"
+  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudio.2019.Community -e"
 
 - name: Set HKCR:\Directory\Background\shell\AnyCode
   ansible.windows.win_regedit:

@@ -1,9 +1,12 @@
 ---
 
-- name: Install Docker Desktop from Chocolatey
-  win_chocolatey:
-    name: docker-desktop
-    state: latest
+# - name: Install Docker Desktop from Chocolatey
+#   win_chocolatey:
+#     name: docker-desktop
+#     state: latest
+
+- name: "Install Docker Desktop from WinGet"
+  ansible.windows.win_command: "winget install --id=Docker.DockerDesktop -e"
 
 - name: Remove %USERPROFILE%\Desktop\Docker Desktop.lnk
   ansible.windows.win_file:

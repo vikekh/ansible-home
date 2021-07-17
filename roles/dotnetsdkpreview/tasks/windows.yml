@@ -1,0 +1,9 @@
+---
+
+# - name: Install .NET SDK from Chocolatey
+#   win_chocolatey:
+#     name: dotnetcore-sdk
+#     state: latest
+
+- name: "Install Microsoft .NET SDK Preview from WinGet"
+  ansible.windows.win_command: "winget install --id=Microsoft.dotnetPreview -e"

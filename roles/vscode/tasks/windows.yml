@@ -1,40 +1,40 @@
 ---
 
-- name: Install Visual Studio Code from Chocolatey
-  win_chocolatey:
-    name: vscode
-    state: latest
-    package_params: /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
+# - name: Install Visual Studio Code from Chocolatey
+#   win_chocolatey:
+#     name: vscode
+#     state: latest
+#     package_params: /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
 
-- name: Install Ansible extension from Chocolatey
-  win_chocolatey:
-    name: vscode-ansible
-    state: latest
+# - name: Install Ansible extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-ansible
+#     state: latest
 
-- name: Install C# extension from Chocolatey
-  win_chocolatey:
-    name: vscode-csharp
-    state: latest
+# - name: Install C# extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-csharp
+#     state: latest
 
-- name: Install Docker extension from Chocolatey
-  win_chocolatey:
-    name: vscode-docker
-    state: latest
+# - name: Install Docker extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-docker
+#     state: latest
 
-- name: Install EditorConfig extension from Chocolatey
-  win_chocolatey:
-    name: vscode-editorconfig
-    state: latest
+# - name: Install EditorConfig extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-editorconfig
+#     state: latest
 
-- name: Install PowerShell extension from Chocolatey
-  win_chocolatey:
-    name: vscode-powershell
-    state: latest
+# - name: Install PowerShell extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-powershell
+#     state: latest
 
-- name: Install YAML extension from Chocolatey
-  win_chocolatey:
-    name: vscode-yaml
-    state: latest
+# - name: Install YAML extension from Chocolatey
+#   win_chocolatey:
+#     name: vscode-yaml
+#     state: latest
 
 #- name: Install Remote - Containers extension
 #  win_shell: code --install-extension ms-vscode-remote.remote-containers
@@ -44,3 +44,6 @@
 
 #- name: Install Remote - WSL extension
 #  win_shell: code --install-extension ms-vscode-remote.remote-wsl
+
+- name: "Install Visual Studio Code from WinGet"
+  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudioCode -e"

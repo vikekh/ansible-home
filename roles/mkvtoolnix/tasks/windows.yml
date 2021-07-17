@@ -1,6 +1,9 @@
 ---
 
-- name: Install MKVToolNix from Chocolatey
-  win_chocolatey:
-    name: mkvtoolnix
-    state: latest
+# - name: Install MKVToolNix from Chocolatey
+#   win_chocolatey:
+#     name: mkvtoolnix
+#     state: latest
+
+- name: "Install MKVToolNix from WinGet"
+  ansible.windows.win_command: "winget install --id=MKVToolNix.MKVToolNix -e"

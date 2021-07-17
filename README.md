@@ -29,11 +29,14 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
   * LG OnScreen Control
   * Messenger
   * Origin (Chocolatey) - has package parameters
-  * Azure CLI
   * Epic Launcher
   * AMD Ryzen Master
   * MSI Afterburner
   * UserBenchMark
+  * EA Desktop
+  * Xbox
+  * VLC Blu-ray
+  * Mediainfo (Chocolatey)
 * Set default apps
 * Autostart apps
 * etc/hosts
@@ -63,8 +66,9 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShellCommandOption 
 ### Ansible WSL2/Ubuntu
 
 1. https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
-2. sudo apt-get install sshpass
-3.
+2. export PATH=$PATH:~/.local/bin
+3. sudo apt-get install sshpass
+4.
 ansible-galaxy collection install ansible.windows
 ansible-galaxy collection install community.windows
 

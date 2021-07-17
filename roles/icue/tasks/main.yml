@@ -1,6 +1,9 @@
 ---
 
-- name: Install Corsair iCUE from Chocolatey
-  win_chocolatey:
-    name: icue
-    state: latest
+# - name: Install Corsair iCUE from Chocolatey
+#   win_chocolatey:
+#     name: icue
+#     state: latest
+
+- name: "Install Corsair iCUE 4 from WinGet"
+  ansible.windows.win_command: "winget install --id=Corsair.iCUE -e"

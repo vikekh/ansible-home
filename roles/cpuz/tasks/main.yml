@@ -1,9 +1,12 @@
 ---
 
-- name: Install CPU-Z from Chocolatey
-  win_chocolatey:
-    name: cpu-z
-    state: latest
+# - name: Install CPU-Z from Chocolatey
+#   win_chocolatey:
+#     name: cpu-z
+#     state: latest
+
+- name: "Install CPUID CPU-Z from WinGet"
+  ansible.windows.win_command: "winget install --id=CPUID.CPU-Z -e"
 
 - name: Remove C:\Users\Public\Desktop\CPUID CPU-Z.lnk
   ansible.windows.win_file:

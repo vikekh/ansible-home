@@ -4,16 +4,17 @@
   roles:
     - azure
     - docker
-    - dotnetcoresdk
+    - dotnetsdk
+    - dotnetsdkpreview
     - git
     - kdiff3
     - nodejs
     - sqlitebrowser
     - vscode
-    # - vscodeinsiders # not working
+    - vscodeinsiders
 
 - hosts: windows
   roles:
     - visualstudio2019
-    - visualstudio2019preview # not installing
+    - visualstudio2019preview
     - windowsterminal

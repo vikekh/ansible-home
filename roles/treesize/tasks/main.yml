@@ -1,9 +1,12 @@
 ---
 
-- name: Install TreeSize from Chocolatey
-  win_chocolatey:
-    name: treesizefree
-    state: latest
+# - name: Install TreeSize from Chocolatey
+#   win_chocolatey:
+#     name: treesizefree
+#     state: latest
+
+- name: "Install TreeSize Free from WinGet"
+  ansible.windows.win_command: "winget install --id=JAMSoftware.TreeSizeFree -e"
 
 - name: Set HKCR:\Directory\Background\shell\TreeSize Free
   ansible.windows.win_regedit:

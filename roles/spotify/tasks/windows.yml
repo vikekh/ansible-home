@@ -1,9 +1,12 @@
 ---
 
-- name: Install Spotify from Chocolatey
-  win_chocolatey:
-    name: spotify
-    state: latest
+# - name: Install Spotify from Chocolatey
+#   win_chocolatey:
+#     name: spotify
+#     state: latest
+
+- name: "Install Spotify from WinGet"
+  ansible.windows.win_command: "winget install --id=Spotify.Spotify -e"
 
 - name: Remove %USERPROFILE%\Desktop\Spotify.lnk
   ansible.windows.win_file:

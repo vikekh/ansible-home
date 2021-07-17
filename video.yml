@@ -5,4 +5,5 @@
     - ffmpeg
     - handbrake
     - makemkv
-    # - mkvtoolnix # not installing
+    - mediainfo
+    - mkvtoolnix

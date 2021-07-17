@@ -7,7 +7,7 @@
     - duplicati
     - firefox
     - spotify
-    - veracrypt # not installing
+    # - veracrypt # not installing
     - vlc
     - wireguard
 

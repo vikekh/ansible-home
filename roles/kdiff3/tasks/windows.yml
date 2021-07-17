@@ -1,6 +1,9 @@
 ---
 
-- name: Install KDiff3 from Chocolatey
-  win_chocolatey:
-    name: kdiff3
-    state: latest
+# - name: Install KDiff3 from Chocolatey
+#   win_chocolatey:
+#     name: kdiff3
+#     state: latest
+
+- name: "Install KDiff3 from WinGet"
+  ansible.windows.win_command: "winget install --id=JoachimEibl.KDiff3 -e"

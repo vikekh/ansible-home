@@ -1,6 +1,9 @@
 ---
 
-- name: Install ShellExView from Chocolatey
-  win_chocolatey:
-    name: shexview
-    state: latest
+# - name: Install ShellExView from Chocolatey
+#   win_chocolatey:
+#     name: shexview
+#     state: latest
+
+- name: "Install NirSoft ShellExView from WinGet"
+  ansible.windows.win_command: "winget install --id=NirSoft.ShellExView -e"

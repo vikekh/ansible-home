@@ -16,7 +16,7 @@
     - shellmenuview
     - speedfan # not trusted
     # - syncthing
-    - teamviewer
+    # - teamviewer
     # - testdiskphotorec
     - treesize
     - wifiinfoview

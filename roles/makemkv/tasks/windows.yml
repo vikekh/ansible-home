@@ -1,9 +1,12 @@
 ---
 
-- name: Install MakeMKV from Chocolatey
-  win_chocolatey:
-    name: makemkv
-    state: latest
+# - name: Install MakeMKV from Chocolatey
+#   win_chocolatey:
+#     name: makemkv
+#     state: latest
+
+- name: "Install MakeMKV from WinGet"
+  ansible.windows.win_command: "winget install --id=GuinpinSoft.MakeMKV -e"
 
 - name: Remove %USERPROFILE%\Desktop\MakeMKV.lnk
   ansible.windows.win_file:
