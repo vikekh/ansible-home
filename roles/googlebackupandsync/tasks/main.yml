@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Google Backup and Sync from Chocolatey
-#   win_chocolatey:
-#     name: google-backup-and-sync
-#     state: latest
-
 - name: "Install Google Backup and Sync from WinGet"
   ansible.windows.win_command: "winget install --id=Google.BackupAndSync -e"
 

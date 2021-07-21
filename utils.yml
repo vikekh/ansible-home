@@ -6,17 +6,17 @@
     - cpuz
     # - etcher
     - gpuz
-    # - hashtab # not trusted
+    - hashtab
     - hdtune # not trusted
     - hwmonitor
-    # - imgburn # not trusted
-    # - malwarebytes
-    # - recuva # not trusted
-    - shellexview # not trusted
+    - imgburn
+    - malwarebytes
+    # - recuva
+    - shellexview
     - shellmenuview
-    - speedfan # not trusted
+    - speedfan
     # - syncthing
-    # - teamviewer
     # - testdiskphotorec
     - treesize
+    # - veracrypt # not installing
     - wifiinfoview

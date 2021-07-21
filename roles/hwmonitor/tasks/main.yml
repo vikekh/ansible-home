@@ -1,10 +1,5 @@
 ---
 
-# - name: Install HWMonitor from Chocolatey
-#   win_chocolatey:
-#     name: hwmonitor
-#     state: latest
-
 - name: "Install CPUID HWMonitor from WinGet"
   ansible.windows.win_command: "winget install --id=CPUID.HWMonitor -e"
 

@@ -1,6 +1,4 @@
 ---
 
-- name: Install ImgBurn from Chocolatey
-  win_chocolatey:
-    name: imgburn
-    state: latest
+- name: "Install ImgBurn from WinGet"
+  ansible.windows.win_command: "winget install --id=LIGHTNINGUK.ImgBurn -e"

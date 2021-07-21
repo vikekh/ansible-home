@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Chrome from Chocolatey
-#   win_chocolatey:
-#     name: googlechrome
-#     state: latest
-
 - name: "Install Google Chrome from WinGet"
   ansible.windows.win_command: "winget install --id=Google.Chrome -e"
 

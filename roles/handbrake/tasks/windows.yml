@@ -1,10 +1,5 @@
 ---
 
-# - name: Install HandBrake from Chocolatey
-#   win_chocolatey:
-#     name: handbrake
-#     state: latest
-
 - name: "Install HandBrake from WinGet"
   ansible.windows.win_command: "winget install --id=HandBrake.HandBrake -e"
 

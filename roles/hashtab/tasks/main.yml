@@ -1,6 +1,4 @@
 ---
 
-- name: Install HashTab from Chocolatey # not trusted
-  win_chocolatey:
-    name: hashtab
-    state: latest
+- name: "Install HashTab from WinGet"
+  ansible.windows.win_command: "winget install --id=Implbits.HashTab -e"

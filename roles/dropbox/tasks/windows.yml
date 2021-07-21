@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Dropbox from Chocolatey
-#   win_chocolatey:
-#     name: dropbox
-#     state: latest
-
 - name: "Install Dropbox from WinGet"
   ansible.windows.win_command: "winget install --id=Dropbox.Dropbox -e"
 

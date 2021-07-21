@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Microsoft Teams from Chocolatey
-#   win_chocolatey:
-#     name: microsoft-teams
-#     state: latest
-
 - name: "Install Microsoft Teams from WinGet"
   ansible.windows.win_command: "winget install --id=Microsoft.Teams -e"
 

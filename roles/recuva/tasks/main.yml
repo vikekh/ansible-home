@@ -1,6 +1,4 @@
 ---
 
-- name: Install Recuva from Chocolatey # not trusted
-  win_chocolatey:
-    name: recuva
-    state: latest
+- name: "Install Recuva from WinGet"
+  ansible.windows.win_command: "winget install --id=Piriform.Recuva -e"

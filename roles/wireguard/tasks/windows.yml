@@ -1,10 +1,4 @@
 ---
 
-# - name: Install WireGuard from Chocolatey
-#   win_chocolatey:
-#     name: wireguard
-#     state: latest
-#     allow_prerelease: yes
-
 - name: "Install WireGuard from WinGet"
   ansible.windows.win_command: "winget install --id=WireGuard.WireGuard -e"

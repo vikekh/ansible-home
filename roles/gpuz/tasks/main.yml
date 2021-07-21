@@ -1,10 +1,5 @@
 ---
 
-# - name: Install GPU-Z Portable from Chocolatey
-#   win_chocolatey:
-#     name: gpu-z
-#     state: latest
-
 - name: "Install TechPowerUp GPU-Z from WinGet"
   ansible.windows.win_command: "winget install --id=TechPowerUp.GPU-Z -e"
 

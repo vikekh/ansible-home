@@ -1,13 +1,8 @@
 ---
 
-# - name: Install Git
-#   win_chocolatey:
-#     name: git
-#     state: latest
-#     package_params: /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration
-
 - name: "Install Git from WinGet"
   ansible.windows.win_command: "winget install --id=Git.Git -e"
+  # /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration
 
 - name: Set HKCR:\Directory\Background\shell\git_gui
   ansible.windows.win_regedit:

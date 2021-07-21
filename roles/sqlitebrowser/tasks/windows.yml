@@ -1,10 +1,5 @@
 ---
 
-# - name: Install DB Browser for SQLite from Chocolatey
-#   win_chocolatey:
-#     name: sqlitebrowser
-#     state: latest
-
 - name: "Install DB Browser for SQLite from WinGet"
   ansible.windows.win_command: "winget install --id=DBBrowserForSQLite.DBBrowserForSQLite -e"
 

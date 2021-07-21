@@ -7,5 +7,3 @@
   ansible.windows.win_file:
     path: "%USERPROFILE%\\Desktop\\MakeMKV.lnk"
     state: absent
-
-# Key: https://www.makemkv.com/forum/viewtopic.php?t=1053

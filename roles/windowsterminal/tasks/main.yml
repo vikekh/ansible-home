@@ -1,9 +1,4 @@
 ---
 
-# - name: Install Windows Terminal from Chocolatey
-#   win_chocolatey:
-#     name: microsoft-windows-terminal
-#     state: latest
-
 - name: "Install Windows Terminal from WinGet"
   ansible.windows.win_command: "winget install --id=Microsoft.WindowsTerminal -e"

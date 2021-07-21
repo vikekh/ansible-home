@@ -1,9 +1,4 @@
 ---
 
-# - name: Install Plex from Chocolatey
-#   win_chocolatey:
-#     name: plex
-#     state: latest
-
 - name: "Install Plex from WinGet"
   ansible.windows.win_command: "winget install --id=plex.Plex -e"

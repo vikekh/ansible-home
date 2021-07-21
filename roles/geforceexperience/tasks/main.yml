@@ -1,10 +1,5 @@
 ---
 
-# - name: Install GeForce Experience from Chocolatey
-#   win_chocolatey:
-#     name: geforce-experience
-#     state: latest
-
 - name: "Install Nvidia GeForce Experience from WinGet"
   ansible.windows.win_command: "winget install --id=Nvidia.GeForceExperience -e"
 

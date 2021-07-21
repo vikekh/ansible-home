@@ -1,9 +1,4 @@
 ---
 
-# - name: Install Node.js from Chocolatey
-#   win_chocolatey:
-#     name: nodejs
-#     state: latest
-
 - name: "Install Node.js from WinGet"
   ansible.windows.win_command: "winget install --id=OpenJS.NodeJS -e"

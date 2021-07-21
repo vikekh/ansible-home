@@ -1,10 +1,5 @@
 ---
 
-# - name: Install VLC from Chocolatey
-#   win_chocolatey:
-#     name: vlc
-#     state: latest
-
 - name: "Install VLC Media Player from WinGet"
   ansible.windows.win_command: "winget install --id=VideoLAN.VLC -e"
 

@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Duplicati from Chocolatey
-#   win_chocolatey:
-#     name: duplicati # not trusted
-#     state: latest
-
 - name: "Install Duplicati 2 from WinGet"
   ansible.windows.win_command: "winget install --id=Duplicati.Duplicati -e"
 

@@ -1,10 +1,5 @@
 ---
 
-# - name: Install SpeedFan from Chocolatey # not trusted
-#   win_chocolatey:
-#     name: speedfan
-#     state: latest
-
 - name: "Install Speedfan from WinGet"
   ansible.windows.win_command: "winget install --id=speed.fan -e"
 

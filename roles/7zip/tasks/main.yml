@@ -1,10 +1,5 @@
 ---
 
-# - name: Install 7-Zip from Chocolatey
-#   win_chocolatey:
-#     name: 7zip
-#     state: latest
-
 - name: "Install 7-Zip from WinGet"
   ansible.windows.win_command: "winget install --id=7zip.7zip -e"
 

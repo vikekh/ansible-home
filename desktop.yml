@@ -8,28 +8,27 @@
   roles:
     # - asuspceac68 # not working
     - geforceexperience
-    # - geforcegamereadydriver
     - icue
     # - ghub # not working
     - samsungmagician # not installing
 
+    - bitwarden
     - chrome
     - discord
-    - msteams
-    - mullvad # not working
-    - paintnet # not installing
-    # - playnite
-    # - scummvm # not trusted
-    # - slack
-    - steam
-    # - tagspaces
-    - plex
-    - svtplaydl
-    - tinymediamanager
-    - libreoffice
-    # - pdfsam
     - eadesktop
     - epicgameslauncher
+    - msteams
+    - mullvad
+    - paintnet # not installing
+    - playnite
+    - scummvm
+    - slack
+    - steam
+    - plex
+    - pdfsam
+    - svtplaydl
+    - tagspaces
+    - tinymediamanager
 
  - import_playbook: development.yml
  - import_playbook: utils.yml

@@ -1,9 +1,7 @@
 ---
 
-- name: Install ScummVM from Chocolatey # not trusted
-  win_chocolatey:
-    name: scummvm
-    state: latest
+- name: "Install ScummVM from WinGet"
+  ansible.windows.win_command: "winget install --id=ScummVM.ScummVM -e"
 
 - name: Remove %USERPROFILE%\Desktop\ScummVM.lnk
   ansible.windows.win_file:

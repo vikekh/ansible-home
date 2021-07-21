@@ -1,10 +1,8 @@
 ---
 
-# - name: Install Visual Studio Code from Chocolatey
-#   win_chocolatey:
-#     name: vscode
-#     state: latest
-#     package_params: /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
+- name: "Install Visual Studio Code from WinGet"
+  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudioCode -e"
+  # /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
 
 # - name: Install Ansible extension from Chocolatey
 #   win_chocolatey:
@@ -44,6 +42,3 @@
 
 #- name: Install Remote - WSL extension
 #  win_shell: code --install-extension ms-vscode-remote.remote-wsl
-
-- name: "Install Visual Studio Code from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudioCode -e"

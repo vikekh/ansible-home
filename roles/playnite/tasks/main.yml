@@ -1,9 +1,7 @@
 ---
 
-- name: Install Playnite from Chocolatey
-  win_chocolatey:
-    name: playnite
-    state: latest
+- name: "Install Playnite from WinGet"
+  ansible.windows.win_command: "winget install --id=Playnite.Playnite -e"
 
 - name: Remove %USERPROFILE%\Desktop\Playnite.lnk
   ansible.windows.win_file:

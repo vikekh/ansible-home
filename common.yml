@@ -2,12 +2,11 @@
 
 - hosts: all
   roles:
-    - bitwarden
     - dropbox
     - duplicati
     - firefox
+    - libreoffice
     - spotify
-    # - veracrypt # not installing
     - vlc
     - wireguard
 

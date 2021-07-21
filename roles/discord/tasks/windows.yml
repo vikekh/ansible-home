@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Discord from Chocolatey
-#   win_chocolatey:
-#     name: discord
-#     state: latest
-
 - name: "Install Discord from WinGet"
   ansible.windows.win_command: "winget install --id=Discord.Discord -e"
 

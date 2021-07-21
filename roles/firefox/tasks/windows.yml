@@ -1,10 +1,5 @@
 ---
 
-# - name: Install Firefox from Chocolatey
-#   win_chocolatey:
-#     name: firefox
-#     state: latest
-#     package_params: /NoTaskbarShortcut /NoDesktopShortcut
-
 - name: "Install Mozilla Firefox from WinGet"
   ansible.windows.win_command: "winget install --id=Mozilla.Firefox -e"
+  # /NoTaskbarShortcut /NoDesktopShortcut
