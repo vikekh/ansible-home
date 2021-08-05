@@ -1,0 +1,5 @@
+---
+
+- name: Install Remmina for Ubuntu
+  when: ansible_distribution == "Ubuntu"
+  include_tasks: ubuntu.yml

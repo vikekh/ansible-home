@@ -1,0 +1,7 @@
+---
+
+items:
+  - ip: 192.168.50.2
+    name: radarr.fantasio.local
+  - ip: 192.168.50.2
+    name: sonarr.fantasio.local

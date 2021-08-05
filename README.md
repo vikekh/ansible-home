@@ -71,6 +71,7 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShellCommandOption 
 4.
 ansible-galaxy collection install ansible.windows
 ansible-galaxy collection install community.windows
+ansible-galaxy collection install community.general.snap
 
 ## Misc.
 
