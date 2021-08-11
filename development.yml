@@ -2,20 +2,19 @@
 
 - hosts: all
   roles:
-#    - azure
-#    - docker
-#    - dotnetsdk
-#    - dotnetsdkpreview
-#    - git
-#    - kdiff3
-#    - nodejs
-#    - sqlitebrowser
+    - docker
+    - dotnetsdk
+    - git
+    - kdiff3
     - vscode
-    - hosts
-#    - vscodeinsiders
-
+   
 - hosts: windows
   roles:
+    - azure
+    - dotnetsdkpreview
+    - nodejs
+    - sqlitebrowser
     - visualstudio2019
     - visualstudio2019preview
+    - vscodeinsiders
     - windowsterminal

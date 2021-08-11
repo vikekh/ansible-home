@@ -3,3 +3,7 @@
 - name: Install Docker for Windows
   when: ansible_os_family == "Windows"
   include_tasks: windows.yml
+  
+- name: Install Docker for Ubuntu
+  when: ansible_distribution == "Ubuntu"
+  include_tasks: ubuntu.yml

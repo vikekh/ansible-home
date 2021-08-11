@@ -2,14 +2,7 @@
 
 - hosts: all
   roles:
-    - dropbox
-    - duplicati
     - firefox
     - libreoffice
     - spotify
     - vlc
-    - wireguard
-
-- hosts: windows
-  roles:
-    - googlebackupandsync

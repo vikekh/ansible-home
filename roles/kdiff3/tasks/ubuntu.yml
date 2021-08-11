@@ -1,0 +1,6 @@
+---
+
+- name: Install KDiff3 from APT
+  apt:
+    name: kdiff3
+    state: latest

@@ -15,8 +15,11 @@
     - bitwarden
     - chrome
     - discord
+    - dropbox
+    - duplicati
     - eadesktop
     - epicgameslauncher
+    - googlebackupandsync
     - msteams
     - mullvad
     - paintnet # not installing
@@ -29,6 +32,7 @@
     - svtplaydl
     - tagspaces
     - tinymediamanager
+    - wireguard
 
  - import_playbook: development.yml
  - import_playbook: utils.yml

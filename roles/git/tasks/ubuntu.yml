@@ -1,11 +1,6 @@
 ---
 
-- name: Add ppa:git-core/ppa APT repository
-  ansible.builtin.apt_repository:
-    repo: ppa:git-core/ppa
-    state: present
-
-- name: Install git from apt
+- name: Install Git from APT
   apt:
     name: git
-    state: present
+    state: latest

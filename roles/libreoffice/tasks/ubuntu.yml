@@ -1,0 +1,11 @@
+---
+
+- name: Install LibreOffice Calc from APT
+  apt:
+    name: libreoffice-calc
+    state: latest
+
+- name: Install LibreOffice Writer from APT
+  apt:
+    name: libreoffice-writer
+    state: latest

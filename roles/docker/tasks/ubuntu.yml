@@ -1,0 +1,11 @@
+---
+
+- name: Install Docker from APT
+  apt:
+    name: docker
+    state: latest
+
+- name: Install Docker Compose from APT
+  apt:
+    name: docker-compose
+    state: latest

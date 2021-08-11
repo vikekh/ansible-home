@@ -1,7 +1,11 @@
 ---
 
-- hosts: all
+- import_playbook: common.yml
+
+- hosts: laptop
   roles:
     - git
     - remmina
     - vscode
+
+ - import_playbook: development.yml

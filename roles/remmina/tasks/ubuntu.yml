@@ -1,14 +1,6 @@
 ---
 
-- name: Add Remmina APT repository
-  ansible.builtin.apt_repository:
-    repo: ppa:remmina-ppa-team/remmina-next
-    state: present
-
-- name: Install remmina
+- name: Install Remmina from APT
   apt:
-    pkg:
-      - remmina
-      - remmina-plugin-rdp
-      - remmina-plugin-secret
-    state: present
+    name: remmina
+    state: latest
