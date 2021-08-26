@@ -4,3 +4,4 @@
   apt:
     name: remmina
     state: latest
+  become: yes

@@ -4,8 +4,6 @@
 
 - hosts: laptop
   roles:
-    - git
     - remmina
-    - vscode
 
- - import_playbook: development.yml
+- import_playbook: development.yml

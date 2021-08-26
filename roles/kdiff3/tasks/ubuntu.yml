@@ -4,3 +4,4 @@
   apt:
     name: kdiff3
     state: latest
+  become: yes

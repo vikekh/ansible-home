@@ -4,3 +4,12 @@
   apt:
     name: git
     state: latest
+  become: yes
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: .gitconfig
+    dest: ~/.gitconfig
+    owner: viktor
+    group: viktor
+    mode: '0600'

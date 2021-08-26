@@ -4,3 +4,4 @@
   apt:
     name: firefox
     state: latest
+  become: yes

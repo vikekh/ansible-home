@@ -4,8 +4,10 @@
   apt:
     name: docker
     state: latest
+  become: yes
 
 - name: Install Docker Compose from APT
   apt:
     name: docker-compose
     state: latest
+  become: yes

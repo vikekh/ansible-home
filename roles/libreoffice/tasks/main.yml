@@ -4,6 +4,6 @@
   when: ansible_os_family == "Windows"
   include_tasks: windows.yml
 
-- name: Install Remmina for Ubuntu
+- name: Install LibreOffice for Ubuntu
   when: ansible_distribution == "Ubuntu"
   include_tasks: ubuntu.yml

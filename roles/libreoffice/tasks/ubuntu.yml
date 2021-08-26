@@ -4,8 +4,10 @@
   apt:
     name: libreoffice-calc
     state: latest
+  become: yes
 
 - name: Install LibreOffice Writer from APT
   apt:
     name: libreoffice-writer
     state: latest
+  become: yes
