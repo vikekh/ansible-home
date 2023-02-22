@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Speedfan from WinGet"
-  ansible.windows.win_command: "winget install --id=speed.fan -e"
+  win_winget:
+    name: 'speed.fan'
 
 - name: Remove %USERPROFILE%\Desktop\SpeedFan.lnk
   ansible.windows.win_file:

@@ -1,12 +1,8 @@
 ---
 
 - name: "Install Bitwarden from WinGet"
-  ansible.windows.win_command: "winget install --id=Bitwarden.Bitwarden -e"
-
-- name: Install Bitwarden CLI from Chocolatey
-  win_chocolatey:
-    name: bitwarden-cli
-    state: latest
+  win_winget:
+    name: 'Bitwarden.Bitwarden'
 
 - name: Remove C:\Users\Public\Desktop\Bitwarden.lnk
   ansible.windows.win_file:

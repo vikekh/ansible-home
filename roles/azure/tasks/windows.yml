@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Microsoft Azure CLI from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.AzureCLI -e"
+  win_winget:
+    name: 'Microsoft.AzureCLI'

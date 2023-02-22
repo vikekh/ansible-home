@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Mullvad VPN from WinGet"
-  ansible.windows.win_command: "winget install --id=MullvadVPN.MullvadVPN -e"
+  win_winget:
+    name: 'MullvadVPN.MullvadVPN'

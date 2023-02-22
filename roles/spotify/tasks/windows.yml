@@ -1,7 +1,10 @@
 ---
 
 - name: "Install Spotify from WinGet"
-  ansible.windows.win_command: "winget install --id=Spotify.Spotify -e"
+  win_winget:
+    name: Spotify.Spotify
+    runas: Viktor
+  # ansible.windows.win_shell: "$id = 'Spotify.Spotify'; If (((winget list --id \"$id\" -e --source winget) -join ';') -notlike \"*$id*\") { winget install --id \"$id\" -e -h --accept-package-agreements --accept-source-agreements }"
 
 - name: Remove %USERPROFILE%\Desktop\Spotify.lnk
   ansible.windows.win_file:

@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Steam from WinGet"
-  ansible.windows.win_command: "winget install --id=Valve.Steam -e"
+  win_winget:
+    name: 'Valve.Steam'
 
 - name: Remove C:\Users\Public\Desktop\Steam.lnk
   ansible.windows.win_file:

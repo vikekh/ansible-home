@@ -1,7 +1,8 @@
 ---
 
-- name: "Install Visual Studio Community 2019 from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudio.2019.Community -e"
+- name: "Install Visual Studio Community 2022 from WinGet"
+  win_winget:
+    name: 'Microsoft.VisualStudio.2022.Community'
 
 - name: Set HKCR:\Directory\Background\shell\AnyCode
   ansible.windows.win_regedit:

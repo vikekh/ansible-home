@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Epic Games Launcher from WinGet"
-  ansible.windows.win_command: "winget install --id=EpicGames.EpicGamesLauncher -e"
+  win_winget:
+    name: 'EpicGames.EpicGamesLauncher'

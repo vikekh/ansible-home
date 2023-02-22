@@ -1,7 +1,8 @@
 ---
 
 - name: "Install CPUID HWMonitor from WinGet"
-  ansible.windows.win_command: "winget install --id=CPUID.HWMonitor -e"
+  win_winget:
+    name: 'CPUID.HWMonitor'
 
 - name: Remove C:\Users\Public\Desktop\CPUID HWMonitor.lnk
   ansible.windows.win_file:

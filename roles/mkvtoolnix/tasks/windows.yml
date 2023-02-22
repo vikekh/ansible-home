@@ -1,4 +1,5 @@
 ---
 
 - name: "Install MKVToolNix from WinGet"
-  ansible.windows.win_command: "winget install --id=MKVToolNix.MKVToolNix -e"
+  win_winget:
+    name: 'MKVToolNix.MKVToolNix'

@@ -1,4 +1,5 @@
 ---
 
 - name: "Install NirSoft ShellExView from WinGet"
-  ansible.windows.win_command: "winget install --id=NirSoft.ShellExView -e"
+  win_winget:
+    name: 'NirSoft.ShellExView'

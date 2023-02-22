@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Git from WinGet"
-  ansible.windows.win_command: "winget install --id=Git.Git -e"
+  win_winget:
+    name: 'Git.Git'
   # /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration
 
 - name: Set HKCR:\Directory\Background\shell\git_gui

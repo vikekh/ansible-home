@@ -1,7 +1,8 @@
 ---
 
-- name: "Install Google Backup and Sync from WinGet"
-  ansible.windows.win_command: "winget install --id=Google.BackupAndSync -e"
+- name: "Install Google Drive from WinGet"
+  win_winget:
+    name: 'Google.Drive'
 
 - name: Remove C:\Users\Public\Desktop\Google Docs.lnk
   ansible.windows.win_file:

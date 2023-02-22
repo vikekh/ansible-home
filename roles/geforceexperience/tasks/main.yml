@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Nvidia GeForce Experience from WinGet"
-  ansible.windows.win_command: "winget install --id=Nvidia.GeForceExperience -e"
+  win_winget:
+    name: 'Nvidia.GeForceExperience'
 
 - name: Remove C:\Users\Public\Desktop\GeForce Experience.lnk
   ansible.windows.win_file:

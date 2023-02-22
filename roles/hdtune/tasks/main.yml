@@ -1,6 +1,3 @@
 ---
 
-- name: Install HD Tune from Chocolatey # not trusted
-  win_chocolatey:
-    name: hdtune
-    state: latest
+[]

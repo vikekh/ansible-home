@@ -1,28 +1,25 @@
 ---
 
- - import_playbook: chocolatey.yml
- - import_playbook: common.yml
- - import_playbook: map_network_drives.yml
+- import_playbook: common.yml
+#- import_playbook: map_network_drives.yml # only works once?
 
 - hosts: desktop
   roles:
-    # - asuspceac68 # not working
     - geforceexperience
     - icue
-    # - ghub # not working
-    - samsungmagician # not installing
-
+    # - ghub
+    # - samsungmagician
     - bitwarden
     - chrome
-    - discord
+    - discord # installation fails
     - dropbox
-    - duplicati
-    - eadesktop
-    - epicgameslauncher
-    - googlebackupandsync
+    - duplicacy
+    - eadesktop # Installer hash does not match; to override this check use --force
+    - epicgameslauncher # 2nd installation fails
+    - googledrive
     - msteams
     - mullvad
-    - paintnet # not installing
+    # - paintnet
     - playnite
     - scummvm
     - slack
@@ -30,10 +27,10 @@
     - plex
     - pdfsam
     - svtplaydl
-    - tagspaces
-    - tinymediamanager
+    # - tinymediamanager
     - wireguard
+  ignore_errors: yes
 
- - import_playbook: development.yml
- - import_playbook: utils.yml
- - import_playbook: video.yml
+- import_playbook: development.yml
+- import_playbook: utils.yml
+- import_playbook: video.yml

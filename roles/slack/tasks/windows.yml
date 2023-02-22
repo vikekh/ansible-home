@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Slack from WinGet"
-  ansible.windows.win_command: "winget install --id=SlackTechnologies.Slack -e"
+  win_winget:
+    name: 'SlackTechnologies.Slack'

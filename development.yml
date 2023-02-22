@@ -11,10 +11,10 @@
 - hosts: windows
   roles:
     - azure
-    - dotnetsdkpreview
+    # - dotnetsdkpreview
     - nodejs
     - sqlitebrowser
-    - visualstudio2019
-    - visualstudio2019preview
+    - visualstudio2022
+    # - visualstudio2022preview
     - vscodeinsiders
     - windowsterminal

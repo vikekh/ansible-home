@@ -79,7 +79,18 @@ function Install-WingetPackage {
     [Parameter(Mandatory = $true)] [string]$winget_path,
     [Parameter(Mandatory = $true)] [String]$package
   )
-  $arguments = [System.Collections.Generic.List[String]]@($winget_path, "install", "-e", "$package")
+
+  $arguments = [System.Collections.Generic.List[String]]@($winget_path, "list", "--id", "$package", "--source", "winget", "-e")
+  $command = Argv-ToString -arguments $arguments
+  $res = Run-Command -Command $command
+
+  if ($res.stdout -like "*$package*") {
+    $module.Result.skipped = $true
+    $module.Result.msg = "Package already installed"
+    $module.ExitJson()
+  }
+
+  $arguments = [System.Collections.Generic.List[String]]@($winget_path, "install", "--id", "$package", "-e", "-h", "--accept-package-agreements", "--accept-source-agreements")
 
   $common_args = Get-InstallWingetPackageArguments
   $arguments.AddRange($common_args)

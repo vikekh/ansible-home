@@ -1,7 +1,8 @@
 ---
 
 - name: "Install ScummVM from WinGet"
-  ansible.windows.win_command: "winget install --id=ScummVM.ScummVM -e"
+  win_winget:
+    name: 'ScummVM.ScummVM'
 
 - name: Remove %USERPROFILE%\Desktop\ScummVM.lnk
   ansible.windows.win_file:

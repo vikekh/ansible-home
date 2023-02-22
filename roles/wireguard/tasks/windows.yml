@@ -1,4 +1,5 @@
 ---
 
 - name: "Install WireGuard from WinGet"
-  ansible.windows.win_command: "winget install --id=WireGuard.WireGuard -e"
+  win_winget:
+    name: 'WireGuard.WireGuard'

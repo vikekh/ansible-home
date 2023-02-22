@@ -1,7 +1,8 @@
 ---
 
 - name: "Install HandBrake from WinGet"
-  ansible.windows.win_command: "winget install --id=HandBrake.HandBrake -e"
+  win_winget:
+    name: 'HandBrake.HandBrake'
 
 - name: Remove C:\Users\Public\Desktop\HandBrake.lnk
   ansible.windows.win_file:

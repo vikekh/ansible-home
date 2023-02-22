@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Microsoft Teams from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.Teams -e"
+  win_winget:
+    name: 'Microsoft.Teams'
 
 - name: Remove %USERPROFILE%\Desktop\Microsoft Teams.lnk
   ansible.windows.win_file:

@@ -1,4 +1,0 @@
----
-
-- name: "Install Visual Studio Community 2019 Preview from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudio.2019.Community-Preview -e"

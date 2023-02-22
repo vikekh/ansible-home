@@ -1,5 +1,6 @@
 ---
 
 - name: "Install Mozilla Firefox from WinGet"
-  ansible.windows.win_command: "winget install --id=Mozilla.Firefox -e"
+  win_winget:
+    name: Mozilla.Firefox
   # /NoTaskbarShortcut /NoDesktopShortcut

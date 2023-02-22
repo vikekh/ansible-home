@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Visual Studio Code from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudioCode -e"
+  win_winget:
+    name: 'Microsoft.VisualStudioCode'
   # /NoDesktopIcon /NoQuicklaunchIcon /NoContextMenuFiles /NoContextMenuFolders
 
 # - name: Install Ansible extension from Chocolatey

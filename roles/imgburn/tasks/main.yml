@@ -1,4 +1,5 @@
 ---
 
 - name: "Install ImgBurn from WinGet"
-  ansible.windows.win_command: "winget install --id=LIGHTNINGUK.ImgBurn -e"
+  win_winget:
+    name: 'LIGHTNINGUK.ImgBurn'

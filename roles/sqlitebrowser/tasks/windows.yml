@@ -1,7 +1,8 @@
 ---
 
 - name: "Install DB Browser for SQLite from WinGet"
-  ansible.windows.win_command: "winget install --id=DBBrowserForSQLite.DBBrowserForSQLite -e"
+  win_winget:
+    name: 'DBBrowserForSQLite.DBBrowserForSQLite'
 
 - name: Remove C:\Users\Public\Desktop\DB Browser (SQLCipher).lnk
   ansible.windows.win_file:

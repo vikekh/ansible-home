@@ -1,7 +1,8 @@
 ---
 
 - name: "Install TechPowerUp GPU-Z from WinGet"
-  ansible.windows.win_command: "winget install --id=TechPowerUp.GPU-Z -e"
+  win_winget:
+    name: 'TechPowerUp.GPU-Z'
 
 - name: Remove C:\Users\Public\Desktop\GPU-Z.lnk
   ansible.windows.win_file:

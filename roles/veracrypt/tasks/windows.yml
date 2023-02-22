@@ -1,6 +1,3 @@
 ---
 
-- name: Install VeraCrypt from Chocolatey
-  win_chocolatey:
-    name: veracrypt
-    state: latest
+[]

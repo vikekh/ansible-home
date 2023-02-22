@@ -1,0 +1,14 @@
+---
+
+- name: Download Duplicacy Web Edition .exe from duplicacy.com
+  ansible.windows.win_get_url:
+    url: https://acrosync.com/duplicacy-web/duplicacy_web_installer_win64_1.5.0.exe
+    dest: C:\ansible\duplicacy_web_installer_win64_1.5.0.exe
+    checksum: 3d2c49b5efad255eaac77723f2f47eb16e837a285bba5cc552760f45b828a108
+    checksum_algorithm: sha256
+    force: True
+
+- name: Install Duplicacy Web Edition .exe
+  ansible.windows.win_package:
+    path: C:\ansible\duplicacy_web_installer_win64_1.5.0.exe
+    state: present

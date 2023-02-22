@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Dropbox from WinGet"
-  ansible.windows.win_command: "winget install --id=Dropbox.Dropbox -e"
+  win_winget:
+    name: 'Dropbox.Dropbox'
 
 - name: Remove %USERPROFILE%\Desktop\Dropbox.lnk
   ansible.windows.win_file:

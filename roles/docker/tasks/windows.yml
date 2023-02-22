@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Docker Desktop from WinGet"
-  ansible.windows.win_command: "winget install --id=Docker.DockerDesktop -e"
+  win_winget:
+    name: 'Docker.DockerDesktop'
 
 - name: Remove %USERPROFILE%\Desktop\Docker Desktop.lnk
   ansible.windows.win_file:

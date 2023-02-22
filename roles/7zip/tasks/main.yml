@@ -1,7 +1,8 @@
 ---
 
 - name: "Install 7-Zip from WinGet"
-  ansible.windows.win_command: "winget install --id=7zip.7zip -e"
+  win_winget:
+    name: '7zip.7zip'
 
 - name: Get HKCR:\*\shellex\ContextMenuHandlers\7-Zip\Default
   ansible.windows.win_reg_stat:

@@ -1,9 +1,0 @@
----
-
-- name: "Install Duplicati 2 from WinGet"
-  ansible.windows.win_command: "winget install --id=Duplicati.Duplicati -e"
-
-- name: Remove C:\Users\Public\Desktop\Duplicati 2.lnk
-  ansible.windows.win_file:
-    path: C:\Users\Public\Desktop\Duplicati 2.lnk
-    state: absent

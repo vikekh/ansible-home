@@ -1,0 +1,5 @@
+---
+
+- name: "Install Visual Studio Community 2022 Preview from WinGet"
+  win_winget:
+    name: 'Microsoft.VisualStudio.2022.Community-Preview'

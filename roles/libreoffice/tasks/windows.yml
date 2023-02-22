@@ -1,7 +1,8 @@
 ---
 
 - name: "Install LibreOffice from WinGet"
-  ansible.windows.win_command: "winget install --id=LibreOffice.LibreOffice -e"
+  win_winget:
+    name: TheDocumentFoundation.LibreOffice
 
 - name: Remove C:\Users\Public\Desktop\LibreOffice 7.1.lnk
   ansible.windows.win_file:

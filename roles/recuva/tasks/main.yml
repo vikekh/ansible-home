@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Recuva from WinGet"
-  ansible.windows.win_command: "winget install --id=Piriform.Recuva -e"
+  win_winget:
+    name: 'Piriform.Recuva'

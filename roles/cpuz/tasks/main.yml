@@ -1,7 +1,8 @@
 ---
 
 - name: "Install CPUID CPU-Z from WinGet"
-  ansible.windows.win_command: "winget install --id=CPUID.CPU-Z -e"
+  win_winget:
+    name: 'CPUID.CPU-Z'
 
 - name: Remove C:\Users\Public\Desktop\CPUID CPU-Z.lnk
   ansible.windows.win_file:

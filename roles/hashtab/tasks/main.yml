@@ -1,4 +1,5 @@
 ---
 
 - name: "Install HashTab from WinGet"
-  ansible.windows.win_command: "winget install --id=Implbits.HashTab -e"
+  win_winget:
+    name: 'Implbits.HashTab'

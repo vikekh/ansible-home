@@ -42,36 +42,38 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
 * etc/hosts
 * https://www.howtogeek.com/howto/5270/quick-tip-disable-search-history-display-in-windows-7/
 
-## New Install
-
-1. C:\Users\Viktor\Downloads\UT_PCE_AC68_2143.zip\UT_PCE_AC68_v2143\Autorun
+## New Install (Windows)
 
 ### Ansible/OpenSSH
 
-1. https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#windows-ssh-setup
-2. https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
-3. Default shell:
-
-New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
-New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShellCommandOption -Value "/c" -PropertyType String -Force
+1. Install OpenSSH, see [Windows SSH Setup](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#windows-ssh-setup)
+   * If installing manually, see [Install Win32 OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH)
+2. Set default shell to PowerShell, see [DefaultShell](https://github.com/PowerShell/Win32-OpenSSH/wiki/DefaultShell)
 
 ### WSL2
 
-1. https://docs.microsoft.com/en-us/windows/wsl/install-win10
-2. Install Ubuntu 20.04 LTS from Microsoft Store
-3. IP to Windows: https://devdojo.com/mvnarendrareddy/access-windows-localhost-from-wsl2
-   /etc/resolv.conf
-4. ssh-keygen -t rsa -b 4096 -C "viktor@spirou2-wsl2"
+1. Install WSL2, see [Install](https://docs.microsoft.com/en-us/windows/wsl/install#install)
+2. Install latest Ubuntu from Microsoft Store
 
-### Ansible WSL2/Ubuntu
+### How to Find Host IP on WSL2 Ubuntu
 
-1. https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
-2. export PATH=$PATH:~/.local/bin
-3. sudo apt-get install sshpass
-4.
-ansible-galaxy collection install ansible.windows
-ansible-galaxy collection install community.windows
-ansible-galaxy collection install community.general.snap
+```
+cat /etc/resolv.conf
+```
+
+### WSL2 Ubuntu
+
+1. Run `ssh-keygen -t rsa -b 4096 -C "viktor@spirou2-wsl2"`
+   * Try SSH:ing to host: `ssh username@hostip`
+   * Check host `C:\Users\username\.ssh\authorized_keys`
+2. Install Ansible, see [Install Ansible on Ubuntu](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu)
+3. Install required Ansible collections:
+   ```
+   ansible-galaxy collection install ansible.windows
+   ansible-galaxy collection install community.windows
+   ansible-galaxy collection install community.general.snap
+   ```
+4. Run playbook: `ansible-playbook myplaybook.yml -i hosts -e ansible_host=hostip`
 
 ## Misc.
 

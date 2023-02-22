@@ -4,19 +4,16 @@
   roles:
     - 7zip
     - cpuz
-    # - etcher
+    - etcher
     - gpuz
     - hashtab
-    - hdtune # not trusted
+    # - hdtune
     - hwmonitor
     - imgburn
     - malwarebytes
-    # - recuva
+    - recuva
     - shellexview
-    - shellmenuview
+    # - shellmenuview
     - speedfan
-    # - syncthing
-    # - testdiskphotorec
     - treesize
-    # - veracrypt # not installing
-    - wifiinfoview
+    # - veracrypt

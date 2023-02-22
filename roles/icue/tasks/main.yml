@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Corsair iCUE 4 from WinGet"
-  ansible.windows.win_command: "winget install --id=Corsair.iCUE -e"
+  win_winget:
+    name: 'Corsair.iCUE.4'

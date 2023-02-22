@@ -1,7 +1,0 @@
----
-
-- name: Install BankID
-  win_chocolatey:
-    name: bankid
-    state: latest
-    allow_prerelease: yes

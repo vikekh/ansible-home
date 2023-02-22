@@ -2,7 +2,7 @@
 
 - hosts: all
   roles:
-    - firefox
+    # - firefox
     - libreoffice
-    - spotify
+    # - spotify # need to become user?
     - vlc

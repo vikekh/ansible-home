@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Google Chrome from WinGet"
-  ansible.windows.win_command: "winget install --id=Google.Chrome -e"
+  win_winget:
+    name: 'Google.Chrome'
 
 - name: Remove C:\Users\Public\Desktop\Google Chrome.lnk
   ansible.windows.win_file:

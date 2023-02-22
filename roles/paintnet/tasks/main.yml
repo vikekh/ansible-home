@@ -1,11 +1,3 @@
 ---
 
-- name: Install Paint.NET from Chocolatey
-  win_chocolatey:
-    name: paint.net
-    state: latest
-
-- name: Remove C:\Users\Public\Desktop\paint.net.lnk
-  ansible.windows.win_file:
-    path: C:\Users\Public\Desktop\paint.net.lnk
-    state: absent
+[]

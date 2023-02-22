@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Visual Studio Code Insiders from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.VisualStudioCode.Insiders -e"
+  win_winget:
+    name: 'Microsoft.VisualStudioCode.Insiders'

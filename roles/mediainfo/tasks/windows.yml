@@ -1,7 +1,8 @@
 ---
 
 - name: "Install MediaInfo from WinGet"
-  ansible.windows.win_command: "winget install --id=MediaArea.MediaInfo-GUI -e"
+  win_winget:
+    name: 'MediaArea.MediaInfo-GUI'
 
 - name: Remove %USERPROFILE%\Desktop\MakeMKV.lnk
   ansible.windows.win_file:

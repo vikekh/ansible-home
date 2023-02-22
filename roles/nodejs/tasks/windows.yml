@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Node.js from WinGet"
-  ansible.windows.win_command: "winget install --id=OpenJS.NodeJS -e"
+  win_winget:
+    name: 'OpenJS.NodeJS'

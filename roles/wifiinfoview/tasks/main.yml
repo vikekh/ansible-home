@@ -1,6 +1,0 @@
----
-
-- name: Install WifiInfoView from Chocolatey
-  win_chocolatey:
-    name: wifiinfoview
-    state: latest

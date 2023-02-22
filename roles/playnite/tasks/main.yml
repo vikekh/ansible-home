@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Playnite from WinGet"
-  ansible.windows.win_command: "winget install --id=Playnite.Playnite -e"
+  win_winget:
+    name: 'Playnite.Playnite'
 
 - name: Remove %USERPROFILE%\Desktop\Playnite.lnk
   ansible.windows.win_file:

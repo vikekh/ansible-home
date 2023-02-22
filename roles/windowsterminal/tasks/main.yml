@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Windows Terminal from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.WindowsTerminal -e"
+  win_winget:
+    name: 'Microsoft.WindowsTerminal'

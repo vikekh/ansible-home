@@ -1,4 +1,5 @@
 ---
 
 - name: "Install EA Desktop from WinGet"
-  ansible.windows.win_command: "winget install --id=ElectronicArts.EADesktop -e"
+  win_winget:
+    name: 'ElectronicArts.EADesktop'

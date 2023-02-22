@@ -1,7 +1,8 @@
 ---
 
 - name: "Install Discord from WinGet"
-  ansible.windows.win_command: "winget install --id=Discord.Discord -e"
+  win_winget:
+    name: 'Discord.Discord'
 
 - name: Remove %USERPROFILE%\Desktop\Discord.lnk
   ansible.windows.win_file:

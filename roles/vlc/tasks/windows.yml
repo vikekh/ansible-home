@@ -1,7 +1,8 @@
 ---
 
 - name: "Install VLC Media Player from WinGet"
-  ansible.windows.win_command: "winget install --id=VideoLAN.VLC -e"
+  win_winget:
+    name: VideoLAN.VLC
 
 - name: Remove C:\Users\Public\Desktop\VLC media player.lnk
   ansible.windows.win_file:

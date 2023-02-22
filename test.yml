@@ -1,0 +1,15 @@
+---
+
+- hosts: desktop
+  tasks:
+    - name: "winget install TheDocumentFoundation.LibreOffice"
+      win_winget: 
+        name: TheDocumentFoundation.LibreOffice
+        state: present
+#     - name: "winget --info"
+#       ansible.windows.win_command: "winget --info"
+#     - name: "where.exe winget"
+#       ansible.windows.win_command: "where.exe winget"
+# - hosts: all
+#   roles:
+#     - discord

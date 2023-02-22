@@ -1,4 +1,5 @@
 ---
 
-- name: "Install Rufus from WinGet"
-  ansible.windows.win_command: "winget install --id=Rufus.Rufus -e"
+- name: "Install balenaEtcher from WinGet"
+  win_winget:
+    name: 'Balena.Etcher'

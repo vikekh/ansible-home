@@ -1,6 +1,3 @@
 ---
 
-- name: Install FFmpeg from Chocolatey
-  win_chocolatey:
-    name: ffmpeg
-    state: latest
+[]

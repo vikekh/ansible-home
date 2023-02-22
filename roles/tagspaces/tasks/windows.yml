@@ -1,6 +1,0 @@
----
-
-- name: Install TagSpaces from Chocolatey
-  win_chocolatey:
-    name: tagspaces
-    state: latest

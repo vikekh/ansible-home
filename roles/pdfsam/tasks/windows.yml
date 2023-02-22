@@ -1,7 +1,8 @@
 ---
 
 - name: "Install PDFsam Basic from WinGet"
-  ansible.windows.win_command: "winget install --id=PDFsam.PDFsam -e"
+  win_winget:
+    name: 'PDFsam.PDFsam'
 
 - name: Remove C:\Users\Public\Desktop\PDFsam Basic.lnk
   ansible.windows.win_file:

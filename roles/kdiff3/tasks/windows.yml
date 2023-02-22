@@ -1,4 +1,5 @@
 ---
 
 - name: "Install KDiff3 from WinGet"
-  ansible.windows.win_command: "winget install --id=JoachimEibl.KDiff3 -e"
+  win_winget:
+    name: 'JoachimEibl.KDiff3'

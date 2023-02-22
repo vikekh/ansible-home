@@ -1,4 +1,5 @@
 ---
 
 - name: "Install Microsoft .NET SDK Preview from WinGet"
-  ansible.windows.win_command: "winget install --id=Microsoft.dotnetPreview -e"
+  win_winget:
+    name: 'Microsoft.dotnetPreview'
